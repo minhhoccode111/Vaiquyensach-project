@@ -8,16 +8,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vài quyển sách.</title>
-    <link rel="stylesheet" href="/assest/reset.css" />
-    <link rel="stylesheet" href="/assest/styles.css" />
+    <link rel="stylesheet" href="./assest/reset.css" />
+    <link rel="stylesheet" href="./assest/styles.css" />
+    <link rel="stylesheet" href="./assest/search.css" />
+    <script src="./assest/app.js" defer></script>
+    <script src="./assest/search.js" defer></script>
   </head>
   <body>
     <div id="wrapper" class="wrapper">
-      <header id="header">asdasd</header>
+      <header id="header">
+        <form class="search-form">
+          <input type="text" class="search" placeholder="Tìm kiếm " />
+          <ul class="suggestions">
+            <li>Nhập tên sách</li>
+            <li>hoặc tên tác giả</li>
+            <li>hoặc thể loại</li>
+          </ul>
+        </form>
+      </header>
       <nav id="nav"></nav>
       <main id="main"></main>
       <aside id="a side"></aside>
+      <footer id="footer">
+        <a href="./assest/data.html">Xem trang Excel.</a>
+      </footer>
     </div>
-    <script src="/assest/app.js" defer></script>
   </body>
 </html>
