@@ -1,0 +1,1460 @@
+[
+ {
+  "TITLE": "Tâm lý học tính cách",
+  "AUTHOR": "Trâu Hoàng Minh",
+  "STATUS ": "✔",
+  "PRICE": 110,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Quẳng gánh lo đi mà vui sống",
+  "AUTHOR": "Dale Carnegie",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 86,
+  "CATEGORY": "Phát triển bản thân"
+ },
+ {
+  "TITLE": "Số đỏ",
+  "AUTHOR": "Vũ Trọng Phụng",
+  "STATUS ": "✔",
+  "PRICE": 30,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Giải mã trí tuệ cảm xúc",
+  "AUTHOR": "Andrea Bacon và Ali Dawson",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 88,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Lắt léo tiếng việt",
+  "AUTHOR": "Lê Minh Quốc",
+  "STATUS ": "✔",
+  "PRICE": 81,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Heidegger và con hà mã bước qua cổng thiên đường",
+  "AUTHOR": "Thomas Cathcart, Daniel Klein",
+  "STATUS ": "✔",
+  "PRICE": 105,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Nỗi lo âu về địa vị",
+  "AUTHOR": "Alain de Botton",
+  "STATUS ": "✔",
+  "PRICE": 115,
+  "CATEGORY": "Triết học"
+ },
+ {
+  "TITLE": "Những đứa trẻ bị mắc kẹt",
+  "AUTHOR": "Minato Kanae",
+  "STATUS ": "✔",
+  "PRICE": 89,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Quân vương",
+  "AUTHOR": "Niccolò Machiavelli",
+  "STATUS ": "✔",
+  "PRICE": 160,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Tâm lý học trong nháy mắt 5",
+  "AUTHOR": "Ez Psychology",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 109,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Tâm lý học trong nháy mắt 3",
+  "AUTHOR": "Ez Psychology",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 146,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Tâm lý học trong nháy mắt 2",
+  "AUTHOR": "Ez Psychology",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 132,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Tâm lý học trong nháy mắt 4",
+  "AUTHOR": "Ez Psychology",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 108,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Sao chúng ta lại ngủ",
+  "AUTHOR": "Mathhew Walker",
+  "STATUS ": "✔",
+  "PRICE": 249,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Làm đĩ",
+  "AUTHOR": "Vũ Trọng Phụng",
+  "STATUS ": "✔",
+  "PRICE": 55,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Harvard bốn rưỡi sáng",
+  "AUTHOR": "Xiu-ying Wei",
+  "STATUS ": "✔",
+  "PRICE": 139,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Đảo x2",
+  "AUTHOR": "Nguyễn Ngọc Tư",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 55,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Nghệ thuật tinh tế của việc đếch quan tâm x2",
+  "AUTHOR": "Mark Manson",
+  "STATUS ON EXCEL": "✔✔",
+  "STATUS ": "✔",
+  "PRICE": 128,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Dám bị ghét",
+  "AUTHOR": "Koga Fumitake, Kishimi Ichiro",
+  "STATUS ": "✔",
+  "PRICE": 96,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Cô gái mặc váy tím",
+  "AUTHOR": "Imamura Natsuko",
+  "STATUS ": "✔",
+  "PRICE": 95,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Đánh thức phù thủy trí nhớ trong bạn",
+  "AUTHOR": "Nguyễn Chu Nam Phương, FUSUSU",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 150,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Nếu biết trăm năm là hữu hạn",
+  "AUTHOR": "Phạm Lữ Ân",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 94,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Thôi miên bằng ngôn từ",
+  "AUTHOR": "Joe Vitale",
+  "STATUS ": "✔",
+  "PRICE": 149,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Thiên tài bên trái kẻ điên bên phải",
+  "AUTHOR": "Cao Minh",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 179,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Những điều giữ tôi còn sống",
+  "AUTHOR": "Matt Haig",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 119,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Truyền sao cho thông",
+  "AUTHOR": "Andrew Macarthy",
+  "STATUS ": "✔",
+  "PRICE": 169,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Con đường trở thành Freelancer Writer",
+  "AUTHOR": "Linh Phan",
+  "STATUS ": "✔",
+  "PRICE": 220,
+  "CATEGORY": "Marketing - Bán hàng"
+ },
+ {
+  "TITLE": "Sự an ủi của triết học",
+  "AUTHOR": "Alain de Botton",
+  "STATUS ": "✔",
+  "PRICE": 109,
+  "CATEGORY": "Triết học"
+ },
+ {
+  "TITLE": "Những lời giáo huấn của Epictetus",
+  "AUTHOR": "Robin Hard, Christopher Gill",
+  "STATUS ": "✔",
+  "PRICE": 239,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Bàn về ham muốn",
+  "AUTHOR": "William B. Irvine",
+  "STATUS ": "✔",
+  "PRICE": 169,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Little stories to have a nice day",
+  "AUTHOR": "Stacey Riches",
+  "STATUS ": "✔",
+  "PRICE": 65,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "How Psychology Works",
+  "AUTHOR": "Jo Hemmings",
+  "STATUS ": "✔",
+  "PRICE": 300,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Chủ nghĩa khắc kỷ",
+  "AUTHOR": "William B. Irvine",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 125,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Plato và con thú mỏ vịt bước vào quán bar..",
+  "AUTHOR": "Thomas Cathcart & Daniel Klein",
+  "STATUS ": "✔",
+  "PRICE": 100,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Lỗi Error 404 x2",
+  "AUTHOR": "Plaaastic",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 89,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Để ngôn từ trở thành sức mạnh",
+  "AUTHOR": "Takahashi Nobuyuki",
+  "STATUS ": "✔",
+  "PRICE": 59,
+  "CATEGORY": "Marketing - Bán hàng"
+ },
+ {
+  "TITLE": "Bạn là những gì bạn ăn",
+  "AUTHOR": "Aya Murayama",
+  "STATUS ": "✔",
+  "PRICE": 75,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Cẩm nang phương pháp sư phạm",
+  "AUTHOR": "Nguyễn Thị Minh Phương",
+  "STATUS ": "✔",
+  "PRICE": 150,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Cha mẹ độc hại",
+  "AUTHOR": "Susan Forward, Craig Buck",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 148,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Sang chấn tâm lý",
+  "AUTHOR": "Bessel Van Der Kolk, M.D",
+  "STATUS ": "✔",
+  "PRICE": 350,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Bàn tay kỳ diệu của Sachi",
+  "AUTHOR": "Tabata Seiichi, Nobe Akiko, Shizawa Sayoko",
+  "STATUS ": "✔",
+  "PRICE": 39,
+  "CATEGORY": "Truyện"
+ },
+ {
+  "TITLE": "Món ngon xứ Huế",
+  "AUTHOR": "Nguyễn Thị Phiên , Đỗ Thị Phương Nhi",
+  "STATUS ": "✔",
+  "PRICE": 139,
+  "CATEGORY": "Thường thức"
+ },
+ {
+  "TITLE": "Tôi đã sinh ra một lần nữa",
+  "AUTHOR": "Oopsy",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 69,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Nhân tố Enzyme x2",
+  "AUTHOR": "Hiromi Shinya",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 81,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Tự học 200 từ vựng tiếng anh",
+  "AUTHOR": "The Windy",
+  "STATUS ": "✔",
+  "PRICE": 65,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Tô bình yên vẽ hạnh phúc",
+  "AUTHOR": "Kulzsc",
+  "STATUS ": "✔",
+  "PRICE": 68
+ },
+ {
+  "TITLE": "Hòn đá xanh",
+  "AUTHOR": "Jimmy Liao",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 99,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Nghệ thuật xử thế của bạn gái",
+  "AUTHOR": "Thành Khang - Ngọc Yến",
+  "STATUS ": "✔",
+  "PRICE": 65,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Ai che lưng cho bạn",
+  "AUTHOR": "Keith Ferrazzi",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 110,
+  "CATEGORY": "Phát triển bản thân"
+ },
+ {
+  "TITLE": "Đời ngắn đừng ngủ dài",
+  "AUTHOR": "Robin Sharma",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 60,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Đến Nhật học về cuộc đời",
+  "AUTHOR": "Lê Nguyễn Nhật Linh",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 85,
+  "CATEGORY": "Phát triển bản thân"
+ },
+ {
+  "TITLE": "Xuân yến",
+  "AUTHOR": "An Ni BảoBối",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 130,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Có anh ở đây rồi, hạnh phúc cũng ở đây",
+  "AUTHOR": "Du Phong",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 69,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Nhân tố Enzyme | Phương thức sống lành mạnh",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔"
+ },
+ {
+  "TITLE": "Lược sử thời gian",
+  "AUTHOR": "Stephen Hawking",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 115,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Sức mạnh tiềm thức",
+  "AUTHOR": "Joseph Murphy, Ph.D., D.D",
+  "STATUS ": "✔",
+  "PRICE": 128,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Sức mạnh của tĩnh lặng",
+  "AUTHOR": "Sức mạnh của tĩnh lặng",
+  "STATUS ": "✔",
+  "PRICE": 34,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Một lít nước mắt",
+  "AUTHOR": "Kito Aya",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 80,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Còn nhớ nhau không",
+  "AUTHOR": "Lê Minh Hà",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 52,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Người thắp sao trời",
+  "AUTHOR": "Tự Từ",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 60,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Divergent",
+  "AUTHOR": "Veronica Roth",
+  "STATUS ": "✔",
+  "PRICE": 150,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "How to make someone fall in love with you in 90 minutes or less",
+  "AUTHOR": "Nicholas Boothman",
+  "STATUS ": "✔",
+  "PRICE": 190
+ },
+ {
+  "TITLE": "Ngọn đèn không tắt",
+  "AUTHOR": "Nguyễn Ngọc Tư",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 65,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Tuyển tập truyện ngụ ngôn hay nhất của Aesop 2",
+  "AUTHOR": "Aesop",
+  "STATUS ": "✔",
+  "PRICE": 46,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Tuyển tập những câu chuyện hay nhất của Aesop 1",
+  "AUTHOR": "Aesop",
+  "STATUS ": "✔",
+  "PRICE": 50,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Từ điển tâm lý",
+  "AUTHOR": "Shozo Shibuya",
+  "STATUS ": "✔",
+  "PRICE": 128,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Toàn như tâm lý học",
+  "AUTHOR": "Motofumi Fukahori",
+  "STATUS ": "✔",
+  "PRICE": 126,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Thánh kinh dưỡng da",
+  "AUTHOR": "Chizu Saeki",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 105,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Truyện Kiều",
+  "AUTHOR": "Nguyễn Du",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 42,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Những ngày thơ ấu",
+  "AUTHOR": "Nguyên Hồng",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 39,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Gáy người thì lạnh",
+  "AUTHOR": "Nguyễn NgọcTư",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 55,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Cảm ơn người lớn",
+  "AUTHOR": "Nguyễn Nhật Ánh",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 110,
+  "CATEGORY": "Văn Học"
+ },
+ {
+  "TITLE": "Ngồi khóc trên cây",
+  "AUTHOR": "Nguyễn Nhật Ánh",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 99,
+  "CATEGORY": "Văn Học"
+ },
+ {
+  "TITLE": "Con nghĩ đi, mẹ không biết",
+  "AUTHOR": "Mẹ Xu-Sim",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 79,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Nói sao cho trẻ chịu học",
+  "AUTHOR": "Adele Faber, Elaine Mazlish",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 85,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Nói sao cho trẻ chịu nghe",
+  "AUTHOR": "Adele Faber, Elaine Mazlish",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 170,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Mắt biếc",
+  "AUTHOR": "Nguyễn Nhật Ánh",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 110,
+  "CATEGORY": "Văn Học"
+ },
+ {
+  "TITLE": "Vụ ám sát quý cô nửa mùa",
+  "AUTHOR": "Robin Stevens",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 85,
+  "CATEGORY": "Trinh thám"
+ },
+ {
+  "TITLE": "Sáu ngày của thần ưng",
+  "AUTHOR": "James Grady",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 60,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Cách khen, cách mắng, cách phạt con",
+  "AUTHOR": "Masami Sasaki, Wakamatsu Aki",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 59,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Thần thoại Hy Lạp",
+  "AUTHOR": "Nguyễn Văn Khỏa",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 205,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Ngày xưa có một chuyện tình",
+  "AUTHOR": "Nguyễn Nhật Ánh",
+  "STATUS ": "✔",
+  "PRICE": 115,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Khi mây đen kéo tới",
+  "AUTHOR": "Nguyễn Phương Hoa",
+  "STATUS ON EXCEL": "✔✔",
+  "STATUS ": "✔",
+  "PRICE": 68,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Sen",
+  "AUTHOR": "Nguyễn Bảo Trung",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 89,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Thăm dò tiềm thức",
+  "AUTHOR": "Carl Gustav Jung",
+  "STATUS ": "✔",
+  "PRICE": 60,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Cỏ dại thênh thang",
+  "AUTHOR": "Bùi Tiểu Quyên",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 43,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Chuyện kể trăng nghe",
+  "AUTHOR": "Shin Kyung Sook",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 59,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Du ca đời lá",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔"
+ },
+ {
+  "TITLE": "Có một phố vừa đi qua phố",
+  "AUTHOR": "Đinh Vũ Hoàng Nguyên",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 68,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Những tấm lòng cao cả",
+  "AUTHOR": "Edmondo De Amicis",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 66,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "20 phút làm chủ thời gian",
+  "AUTHOR": "Harvard Business Review Press",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 49,
+  "CATEGORY": "Kỹ năng làm việc"
+ },
+ {
+  "TITLE": "Tuổi thơ dữ dội",
+  "AUTHOR": "Phùng Quán",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 130,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Ngữ pháp tiếng Anh căn bản",
+  "AUTHOR": "The Windy",
+  "STATUS ": "✔",
+  "PRICE": 149,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Chăm sóc sức khỏe không dùng thuốc",
+  "AUTHOR": "Dr Biswaroop Roy Chowdhury",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 190,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Người nam châm",
+  "AUTHOR": "Jack Canfield, DD Watkins",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 65,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Hành trang vào đời",
+  "AUTHOR": "David P Campbell",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 50,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Đi tìm lẽ sống",
+  "AUTHOR": "Viktor E Frankl",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 78,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Đời thay đổi khi chúng ta thay đổi",
+  "AUTHOR": "Andrew Matthews",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Tony buổi sáng - Trên đường băng",
+  "AUTHOR": "Tony Buổi Sáng",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 75,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Tony buổi sáng - Cà phê cùng Tony",
+  "AUTHOR": "Tony Buổi Sáng",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 88,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Nghệ thuật mắng",
+  "AUTHOR": "Ngô Lệ Na",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 32,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Việt nam sử lược",
+  "AUTHOR": "Trần Trọng Kim",
+  "STATUS ": "✔",
+  "PRICE": 450,
+  "CATEGORY": "Lịch sử"
+ },
+ {
+  "TITLE": "Từ điển tiếng Việt",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Hình vẽ thông minh",
+  "AUTHOR": "Dan Roam",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 135,
+  "CATEGORY": "Kỹ năng làm việc"
+ },
+ {
+  "TITLE": "Đột nhiên có tiếng gõ cửa",
+  "AUTHOR": "Etgar Keret",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 79,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Con đường đi đến thành công bằng sự tử tế",
+  "AUTHOR": "Inamori Kazuo",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 70,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Hài lòng trong công việc bắt đầu từ chính mình",
+  "AUTHOR": "Xuân Nguyễn",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 80,
+  "CATEGORY": "Kỹ năng làm việc"
+ },
+ {
+  "TITLE": "Taotto-chan bên cửa sổ",
+  "AUTHOR": "Kuroyanagi Tetsuko",
+  "STATUS ": "✔",
+  "PRICE": 98,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Bad luck 1",
+  "AUTHOR": "Nguyễn Huỳnh Bảo Châu",
+  "STATUS ": "✔",
+  "PRICE": 78,
+  "CATEGORY": "Truyện"
+ },
+ {
+  "TITLE": "Cởi trói linh hồn",
+  "AUTHOR": "Michael A. Singer",
+  "STATUS ": "✔",
+  "PRICE": 124,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Hệ miễn dịch - Kiệt tác của sự sống",
+  "AUTHOR": "Oopsy, Cao Bảo Anh (Cẩm Tú Trường)",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 118,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Trong sa mạc và trong rừng thẳm",
+  "AUTHOR": "Henryk Sienkiewicz",
+  "STATUS ": "✔",
+  "PRICE": 99,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Truyện con chó tên là Trung Thành",
+  "AUTHOR": "Luis Sepulveda",
+  "STATUS ": "✔",
+  "PRICE": 45,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Dạy con trong hoang mang",
+  "AUTHOR": "TS. Lê Nguyên Phương",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 99,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Hành trình của linh hồn",
+  "AUTHOR": "TS Michael Newton",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 129,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Thép đã tôi thế đấy",
+  "AUTHOR": "Nikolai A.Ostrovsky",
+  "STATUS ": "✔",
+  "PRICE": 135,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Thay đổi tí hon hiệu quả bất ngờ",
+  "AUTHOR": "James Clear",
+  "STATUS ": "✔",
+  "PRICE": 190,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Nhân tố Enzyme | Trẻ hóa",
+  "AUTHOR": "Hiromi Shinya",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 79,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Cuộc hẹn bình minh",
+  "AUTHOR": "Yasushi Kitagawa",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 76,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Ta mù tịt",
+  "AUTHOR": "Jorge Cham - Daniel Whiteson",
+  "STATUS ": "✔",
+  "PRICE": 150,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Thiên nhiên hoang dã",
+  "AUTHOR": "Nick Arnold",
+  "STATUS ": "✔",
+  "PRICE": 52,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Não bộ kể gì về bạn",
+  "AUTHOR": "David Eagleman",
+  "STATUS ": "✔",
+  "PRICE": 149,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Minh triết trong ăn uống của phương Đông ",
+  "AUTHOR": "Ngô Đức Vượng",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 138,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Hành trình về phương đông",
+  "AUTHOR": "Baird T. Spalding",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 118,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Đi tìm mảnh ghép gia đình",
+  "AUTHOR": "Lee Hee Young",
+  "STATUS ": "✔",
+  "PRICE": 92,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Nuôi dạy một đứa trẻ hạnh phúc",
+  "AUTHOR": "Jessica Joelle Alexander & Iben Dissing Sandahl",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 144,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Chiêm tinh học nhập môn",
+  "AUTHOR": "Chiêm tinh số",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 99,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Người thắp sao trời- cuốn thứ 2",
+  "AUTHOR": "Tự từ",
+  "STATUS ": "✔",
+  "PRICE": 60,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Giữa trời và đất là tình yêu",
+  "AUTHOR": "Vi Lam",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 78,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Chuyện con mèo dạy hải âu bay",
+  "AUTHOR": "Luis Sepulveda",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 49,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Chuyện con mèo và con chuột bạn thân của nó",
+  "AUTHOR": "Luis Sepulveda",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 39,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Lời hứa về một cây bút chì",
+  "AUTHOR": "Adam Braun",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 159,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Chuyện nhỏ Sài Gòn",
+  "AUTHOR": "Đàm Hà Phú",
+  "STATUS ": "✔",
+  "PRICE": 59,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Người cũ còn thương",
+  "AUTHOR": "Nguyễn Ngọc Thạch",
+  "STATUS ": "✔",
+  "PRICE": 79,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Einstein và vũ trụ giãn nở",
+  "AUTHOR": "Dr. Mike Goldsmith",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 54,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Diary of a Wimpy Kid - The Ugly Truth",
+  "AUTHOR": "Jeff Kinney",
+  "STATUS ": "✔",
+  "PRICE": 223,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Đi đâu cũng nhớ Sài Gòn và em",
+  "AUTHOR": "Anh Khang",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 70,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Sức mạnh của hiện tại",
+  "AUTHOR": "Eckhart Tolle",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 168,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Hiệu ứng chim mồi 1",
+  "AUTHOR": "Ecoblader",
+  "STATUS ": "✔",
+  "PRICE": 75,
+  "CATEGORY": "Marketing - Bán hàng"
+ },
+ {
+  "TITLE": "Hiệu ứng chim mồi 2",
+  "AUTHOR": "Ecoblader",
+  "STATUS ": "✔",
+  "PRICE": 80,
+  "CATEGORY": "Marketing - Bán hàng"
+ },
+ {
+  "TITLE": "Hiệu ứng chim mồi 3",
+  "AUTHOR": "Ecoblader",
+  "STATUS ": "✔",
+  "PRICE": 100,
+  "CATEGORY": "Marketing - Bán hàng"
+ },
+ {
+  "TITLE": "Hùng biện kiểu Ted",
+  "AUTHOR": "Jeremey Donovan",
+  "STATUS ": "✔",
+  "PRICE": 109,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Bí mật của may mắn",
+  "AUTHOR": "Alex Rovira",
+  "STATUS ": "✔",
+  "PRICE": 48,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Ông trăm tuổi trèo qua cửa sổ và biến mất",
+  "AUTHOR": "Jonas Jonasson",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 170,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Tôi tự học",
+  "AUTHOR": "Thu Giang - Nguyễn Duy Cần",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 60,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Làm chủ trí nhớ của bạn",
+  "AUTHOR": "Tony Buzan",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 148,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Phi lý trí",
+  "AUTHOR": "Dan Ariely",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 169,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Gần như là sống",
+  "AUTHOR": "Đỗ Phấn",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 95,
+  "CATEGORY": "Tiểu thuyết"
+ },
+ {
+  "TITLE": "Truyện ngắn Nam Cao",
+  "AUTHOR": "Nam Cao",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 59,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Giao tiếp bất kỳ ai",
+  "AUTHOR": "Bennie Boughn, Jon Condrill",
+  "STATUS ": "✔",
+  "PRICE": 47,
+  "CATEGORY": "Kỹ năng làm việc"
+ },
+ {
+  "TITLE": "Điều cuối cùng ở lại",
+  "AUTHOR": "Lynh Miêu",
+  "STATUS ": "✔",
+  "PRICE": 65,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Nhập môn triết học",
+  "AUTHOR": "Dave Robinson và Judy Groves",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 32,
+  "CATEGORY": "Triết học"
+ },
+ {
+  "TITLE": "Tế bào gốc",
+  "AUTHOR": "Paul Knoepfler",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 199,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Mô hình xoán động",
+  "AUTHOR": "Vũ Phi Yến",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 99,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Bí ẩn của não phải",
+  "AUTHOR": "Makoto Shichida",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 118,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Ngôn ngữ cơ thể",
+  "AUTHOR": "no data",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "CATEGORY": "no data"
+ },
+ {
+  "TITLE": "Chắc gì ta đã yêu nhau",
+  "AUTHOR": "Minh Nhật",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 86,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Từ câu sai đến câu hay",
+  "AUTHOR": "Nguyễn Đức Dân",
+  "STATUS ": "✔",
+  "PRICE": 128,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ {
+  "TITLE": "Dẫn luận về Jung",
+  "AUTHOR": "Anthony Stevens",
+  "STATUS ": "✔",
+  "PRICE": 84,
+  "CATEGORY": "Triết học"
+ },
+ {
+  "TITLE": "Không có câu hỏi nào ngớ ngẩn",
+  "AUTHOR": "10IFS",
+  "STATUS ": "✔",
+  "PRICE": 83,
+  "CATEGORY": "Thiếu nhi"
+ },
+ {
+  "TITLE": "Vì sao chúng ta làm việc",
+  "AUTHOR": "Barry Schwartz",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 55,
+  "CATEGORY": "Kỹ năng làm việc"
+ },
+ {
+  "TITLE": "Chỉ cần mẩu khăn giấy",
+  "AUTHOR": "Dan Roam",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 150,
+  "CATEGORY": "Kỹ năng làm việc"
+ },
+ {
+  "TITLE": "Chuyện con ốc sên muốn biết tại sao nó chậm chạp",
+  "AUTHOR": "Luis Sepulveda",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 39,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Phía bên kia nửa đêm",
+  "AUTHOR": "Sidney Sheldon",
+  "STATUS ": "✔",
+  "PRICE": 115,
+  "CATEGORY": "Trinh thám"
+ },
+ {
+  "TITLE": "Paper Towns",
+  "AUTHOR": "John Green",
+  "STATUS ": "✔",
+  "PRICE": 201,
+  "CATEGORY": "Văn học"
+ },
+ {
+  "TITLE": "Ung thư - Tin đồn và sự thật",
+  "AUTHOR": "Ruy Băng Tím",
+  "STATUS ": "✔",
+  "PRICE": 149,
+  "CATEGORY": "Sức khỏe"
+ },
+ {
+  "TITLE": "Lối sống tối giản của người Nhật",
+  "AUTHOR": "Sasaki Fumio",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 119,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Cẩn trọng cái đầu",
+  "AUTHOR": "Cẩn trọng cái đầu",
+  "STATUS ": "✔",
+  "PRICE": 71,
+  "CATEGORY": "Kỹ năng sống"
+ },
+ {
+  "TITLE": "Tâm lý học trong nháy mắt 1",
+  "AUTHOR": "Nhóm Ezpsychology",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 119,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Dạy con trong hoang mang 2",
+  "AUTHOR": "TS. Lê Nguyên Phương",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 126,
+  "CATEGORY": "Nuôi dạy con"
+ },
+ {
+  "TITLE": "Ấn độ và Trung hoa cổ đại",
+  "AUTHOR": "E. O. Plauen",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 50,
+  "CATEGORY": "Lịch sử"
+ },
+ {
+  "TITLE": "Tâm lý học hài hước",
+  "AUTHOR": "Richard Wiseman",
+  "STATUS ON EXCEL": "✔",
+  "STATUS ": "✔",
+  "PRICE": 89,
+  "CATEGORY": "Tâm lý"
+ },
+ {
+  "TITLE": "Power of force",
+  "AUTHOR": "David R.Hawkins",
+  "STATUS ": "✔",
+  "PRICE": 143,
+  "CATEGORY": "Kiến thức tổng hợp"
+ },
+ null,
+ null,
+ {
+  "TITLE": "không có"
+ },
+ {
+  "TITLE": "sức mạnh của tiềm thức"
+ },
+ {
+  "TITLE": "chú chó nhìn thấy gì"
+ },
+ {
+  "TITLE": "cẩn thận cái đầu"
+ },
+ {
+  "TITLE": "thăm dò tiềm thức "
+ },
+ {
+  "TITLE": "tại sao đàn ông thích tình dục và phụ nữ cần tình yêu"
+ },
+ {
+  "TITLE": "ghi chép về một hành tinh âu lo"
+ },
+ {
+  "TITLE": "vạn vật vận hành"
+ },
+ {
+  "TITLE": "Sapiens Lược sử loài người"
+ },
+ {
+  "TITLE": "6 phát minh làm nên thời đại"
+ },
+ {
+  "TITLE": "khi hơi thở hóa thinh không"
+ },
+ {
+  "TITLE": "ung thư tin đồn và sự thật"
+ },
+ {
+  "TITLE": "đừng nói chuyện với cô ấy tập 1"
+ },
+ {
+  "TITLE": "đừng nói chuyện với cô ấy tập 2"
+ },
+ {
+  "TITLE": "thú tội"
+ },
+ {
+  "TITLE": "đề thi đẫm máu"
+ },
+ {
+  "TITLE": "7 năm bóng tối"
+ },
+ {
+  "TITLE": "im lặng của bầy cừu"
+ },
+ {
+  "TITLE": "thánh giá rỗng"
+ },
+ {
+  "TITLE": "nhà đen"
+ },
+ {
+  "TITLE": "Strawberry Night"
+ },
+ {
+  "TITLE": "âm thanh của sự im lặng"
+ },
+ {
+  "TITLE": "trên sa mạc và rừng thẳm"
+ },
+ {
+  "TITLE": "chuyện con chó tên là trung thành"
+ },
+ {
+  "TITLE": "kiêu hãnh và định kiến"
+ },
+ {
+  "TITLE": "nhà giả kim"
+ },
+ {
+  "TITLE": "hoàng tử bé"
+ },
+ {
+  "TITLE": "ở đâu đó có điện thoại gọi tôi"
+ },
+ {
+  "TITLE": "yêu người yêu người ta"
+ },
+ {
+  "TITLE": "bức xúc không làm ta vô can"
+ },
+ {
+  "TITLE": "sữa và mật"
+ },
+ {
+  "TITLE": "em đang giấu gì vậy"
+ },
+ {
+  "TITLE": "cuộc gặp gỡ mùa hè"
+ },
+ {
+  "TITLE": "5 centimét trên giây"
+ },
+ {
+  "TITLE": "em sẽ đến cùng cơn mưa"
+ },
+ {
+  "TITLE": "điều kỳ diệu của tạp hóa Namiya"
+ },
+ {
+  "TITLE": "totto chan bên cửa sổ"
+ },
+ {
+  "TITLE": "những lá thư đến từ tương lai"
+ },
+ {
+  "TITLE": "lời cầu nguyện chín năm trước"
+ },
+ {
+  "TITLE": "người đan chữ xếp thuyền"
+ },
+ {
+  "TITLE": "thất tịch không mưa"
+ },
+ {
+  "TITLE": "giúp con phát triển ngôn ngữ"
+ },
+ {
+  "TITLE": "30 ngày cùng con học hiểu về chống xâm hại"
+ },
+ {
+  "TITLE": "mình là cá việc của mình là bơi"
+ },
+ {
+  "TITLE": "đừng bao giờ đi ăn một mình"
+ },
+ {
+  "TITLE": "ngày xưa có một con bò"
+ },
+ {
+  "TITLE": "đắc nhân tâm"
+ },
+ {
+  "TITLE": "IQ trong nghệ thuật thuyết phục"
+ },
+ {
+  "TITLE": "khéo ăn nói sẽ có được thiên hạ"
+ },
+ {
+  "TITLE": "tôi tài giỏi bạn cũng thế"
+ },
+ {
+  "TITLE": "nghệ thuật pr bản thân"
+ },
+ {
+  "TITLE": "hồn nhiên trong thế giới đảo điên"
+ }
+]
