@@ -20,17 +20,21 @@ body {
 }
 .wrapper {
 }
-.header {
+#header {
   border: 1px solid #000;
   font-family: "Roboto", sans-serif;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #ffc600;
 }
 #footer {
   position: fixed;
   z-index: 10;
-  bottom: 2%;
-  left: 5%;
-  right: 5%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
   background-color: var(--dark-color);
+  padding: 1rem 2rem;
 }
 .left {
   float: left;

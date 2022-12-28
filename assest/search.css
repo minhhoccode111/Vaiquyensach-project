@@ -20,7 +20,7 @@ input {
 .search-form {
   width: 90%;
   max-width: 40rem;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 
 input.search {
@@ -54,8 +54,10 @@ input.search {
   padding: 0.8rem;
   transition: background 0.2s;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-transform: capitalize;
+  color: var(--dark-color);
 }
 
 .suggestions li:nth-child(even) {
