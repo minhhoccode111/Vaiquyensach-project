@@ -1029,6 +1029,23 @@ const data = [
     CATEGORY: "Kiến thức tổng hợp",
   },
 ];
+// let html = "";
+let html = data
+  .map((book) => {
+    if (book.CATEGORY === "Tâm lý") {
+      console.log(book);
+      return `
+      <li class="book">
+        <span class="name">${book.TITLE}</span>
+        <span class="name"> ${book.AUTHOR}</span>
+        <span class="book-price">${book.PRICE}</span>
+      </li>
+    `;
+    }
+  }) // FIXME
+  .join("");
+console.log(html);
+document.querySelector(".innerHtml").innerHTML = html;
 
 function findMatches(wordToMatch, data) {
   return data.filter((book) => {
@@ -1069,7 +1086,7 @@ function displayMatches(e) {
         `<span class="hl">${this.value}</span>`
       );
       return `
-      <li class="book">
+      <li class="">
         <span class="name">${title}</span>
         <span class="name"> ${author}</span>
         <span class="name"> ${category}</span>
