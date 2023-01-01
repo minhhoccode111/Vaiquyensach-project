@@ -1,4 +1,4 @@
-console.log("hello world from html");
+"use strict";
 
 const data = [
   {
@@ -1030,8 +1030,6 @@ const data = [
   },
 ];
 
-console.log(data[0].CATEGORY);
-
 function findMatches(wordToMatch, data) {
   return data.filter((book) => {
     // here we need to figure out if the city or state matches what was searched
@@ -1049,7 +1047,11 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-function displayMatches() {
+function displayMatches(e) {
+  if ((e.key === "Backspace" || e.key === "Delete") && e.target.value == "") {
+    suggestions.innerHTML = "";
+    return;
+  }
   const matchArray = findMatches(this.value, data);
   const html = matchArray
     .map((book) => {
@@ -1071,7 +1073,7 @@ function displayMatches() {
         <span class="name">${title}</span>
         <span class="name"> ${author}</span>
         <span class="name"> ${category}</span>
-        <span class="population">${numberWithCommas(book.PRICE)}</span>
+        <span class="book-price">${numberWithCommas(book.PRICE)}</span>
       </li>
     `;
     })

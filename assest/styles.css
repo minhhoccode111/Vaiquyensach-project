@@ -8,6 +8,7 @@
   font-family: "Roboto", sans-serif;
 }
 * {
+  box-sizing: border-box;
 }
 html {
   background-color: var(--dark-color);
@@ -15,34 +16,50 @@ html {
 body {
   color: var(--light-color);
   background-color: var(--dark-color);
-  min-height: 100vh;
-  min-width: 100vw;
   font-size: 1.6rem;
-  margin-bottom: 3rem;
+}
+.unset {
+  all: unset;
 }
 .wrapper {
+  min-height: 90vh;
+  width: 100vw;
+  margin-bottom: 3rem;
 }
 #header {
   border: 1px solid #000;
   font-family: "Roboto", sans-serif;
-  padding: 2rem 1rem;
+  padding: 0 2rem;
+  height: 5.6rem;
   text-align: center;
   color: #ffc600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left {
+}
+.header-left a {
+  cursor: pointer;
 }
 #footer {
-  position: fixed;
-  z-index: 10;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
   background-color: var(--dark-color);
   padding: 1rem 2rem;
 }
 .left {
-  float: left;
+  /* float: left; */
 }
 .right {
-  float: right;
+  font-size: 5.2rem;
+  position: fixed;
+  bottom: 5.6rem;
+  right: 3.2rem;
+  height: 2rem;
+  width: 2rem;
+  z-index: 100;
+  border-radius: 1rem;
+  color: #ffc600 !important;
+  text-decoration: none;
 }
 #footer a {
   color: var(--light-color);
@@ -52,13 +69,13 @@ body {
   text-decoration: none;
 }
 input {
-  width: 100%;
   padding: 0.4rem;
 }
 
 .search-form {
+  position: relative;
   width: 90%;
-  max-width: 40rem;
+  max-width: 36rem;
   margin: 0 auto;
 }
 
@@ -76,11 +93,21 @@ input.search {
   font-size: 1.6rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
 }
+.topright {
+  position: absolute;
+  color: red;
+  top: 0rem;
+  right: 0.4rem;
+  z-index: 200;
+  cursor: pointer;
+  font-size: 28px;
+}
 
 .suggestions {
   margin: 0;
   padding: 0;
   position: relative;
+  width: 100%;
   /*perspective: 20px;*/
 }
 
@@ -89,27 +116,18 @@ input.search {
   list-style: none;
   border-bottom: 1px solid #d8d8d8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  width: 100%;
   margin: 0;
   padding: 0.8rem;
   transition: background 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: var(--dark-color);
 }
 
-.suggestions li:nth-child(even) {
-  /* transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001); */
-  /* background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%); */
-}
-
-.suggestions li:nth-child(odd) {
-  /* transform: perspective(100px) rotateX(-3deg) translateY(3px); */
-  background: linear-gradient(to top, #ffffff 0%, #efefef 100%);
-}
-
-span.population {
+span.book-price {
   font-size: 15px;
 }
 

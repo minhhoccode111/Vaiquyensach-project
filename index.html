@@ -10,32 +10,37 @@
     <title>Vài quyển sách.</title>
     <link rel="stylesheet" href="./assest/reset.css" />
     <link rel="stylesheet" href="./assest/styles.css" />
-    <link rel="stylesheet" href="./assest/search.css" />
-    <script src="./assest/app.js" type="module" defer></script>
+    <script src="./assest/app.js" defer></script>
+    <script src="./assest/actions.js" defer></script>
   </head>
   <body>
     <div id="wrapper" class="wrapper">
-      <header id="header">@Vaiquyensach</header>
+      <header id="header">
+        <div class="header-left"><a href="https://www.instagram.com/vaiquyensach/" target="_blank" class="unset">@Vaiquyensach</a></div>
+        <div class="header-mid"></div>
+        <div class="header-right"></div>
+      </header>
       <nav id="nav"></nav>
       <main id="main">
         <form class="search-form">
-          <input type="text" class="search" placeholder="Tìm kiếm " />
-          <ul class="suggestions">
-            <li>Nhập tên sách</li>
-            <li>hoặc tên tác giả</li>
-            <li>hoặc thể loại</li>
-          </ul>
+          <input
+            type="text"
+            class="search"
+            placeholder="Tìm sách, tác giả hoặc thể loại..."
+          />
+          <span  class="topright">&times</span>
+          <ul class="suggestions"></ul>
         </form>
       </main>
       <aside id="a side"></aside>
-      <footer id="footer">
-        <a
-          class="left"
-          href="https://docs.google.com/spreadsheets/d/1wBktMHKHoEcYw0xR71IYftd9uBGaAyPcS19sxo7X_no/edit#gid=0"
-          >Xem trang Excel.</a
-        >
-        <a href="./assest/data.html" class="right">Xem trang excel.html</a>
-      </footer>
     </div>
+    <footer id="footer">
+      <a
+        class="left"
+        href="https://docs.google.com/spreadsheets/d/1wBktMHKHoEcYw0xR71IYftd9uBGaAyPcS19sxo7X_no/edit#gid=0"
+        >Xem trang Excel.</a
+      >
+      <a href="#header" class="right">&#11014</a>
+    </footer>
   </body>
 </html>
