@@ -1030,22 +1030,22 @@ const data = [
   },
 ];
 // let html = "";
-let html = data
+let innerhtml = data
   .map((book) => {
-    if (book.CATEGORY === "Tâm lý") {
-      console.log(book);
-      return `
+    // if (book.CATEGORY === "Tâm lý") {
+    // console.log(book);
+    return `
       <li class="book">
         <span class="name">${book.TITLE}</span>
         <span class="name"> ${book.AUTHOR}</span>
         <span class="book-price">${book.PRICE}</span>
       </li>
     `;
-    }
+    // }
   }) // FIXME
   .join("");
-console.log(html);
-document.querySelector(".innerHtml").innerHTML = html;
+console.log(innerhtml);
+document.querySelector(".innerHtml").innerHTML = innerhtml;
 
 function findMatches(wordToMatch, data) {
   return data.filter((book) => {
