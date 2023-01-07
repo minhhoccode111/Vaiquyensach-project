@@ -1032,16 +1032,21 @@ const data = [
 // let html = "";
 let innerhtml = data
   .map((book) => {
-    // if (book.CATEGORY === "Tâm lý") {
-    // console.log(book);
-    return `
-      <li class="book">
-        <span class="name">${book.TITLE}</span>
-        <span class="name"> ${book.AUTHOR}</span>
-        <span class="book-price">${book.PRICE}</span>
-      </li>
-    `;
-    // }
+    if (book.CATEGORY === "no data") {
+      // console.log(book);
+      // return `<p>${book.TITLE}</p>`;
+      return `
+        <li class="book">
+          <span class="name">${book.TITLE}</span>
+          <span class="name"> ${book.AUTHOR}</span>
+          <br>
+          <span class="name"> ${book.CATEGORY}</span>
+          <span class="book-price">${book.PRICE}</span>
+          <br>
+          
+        </li>
+      `;
+    }
   }) // FIXME
   .join("");
 console.log(innerhtml);

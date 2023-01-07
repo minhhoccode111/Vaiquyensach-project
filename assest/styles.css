@@ -21,6 +21,9 @@ body {
 .unset {
   all: unset;
 }
+.container-fluid {
+  background-color: var(--dark-color);
+}
 .wrapper {
   min-height: 90vh;
   margin-bottom: 3rem;
