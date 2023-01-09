@@ -1,4 +1,4 @@
-const x = document.querySelector("span.topright");
+const x = document.querySelector("span.top-right");
 x.addEventListener("click", clearInput);
 
 function clearInput(e) {
