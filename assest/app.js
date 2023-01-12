@@ -634,7 +634,7 @@ const data = [
     TITLE: "Cảm ơn người lớn",
     AUTHOR: "Nguyễn Nhật Ánh",
     PRICE: 110,
-    CATEGORY: "Văn Học",
+    CATEGORY: "Văn học",
     LINK_IMAGE:
       "https://salt.tikicdn.com/cache/w1200/ts/product/c8/46/9a/ddd72dee5c2d4756ce2d13df50121614.jpg",
     NAME_IMAGE: "camonnguoilon",
@@ -643,7 +643,7 @@ const data = [
     TITLE: "Ngồi khóc trên cây",
     AUTHOR: "Nguyễn Nhật Ánh",
     PRICE: 99,
-    CATEGORY: "Văn Học",
+    CATEGORY: "Văn học",
     LINK_IMAGE:
       "https://upload.wikimedia.org/wikipedia/vi/thumb/6/61/Ng%E1%BB%93i_kh%C3%B3c_tr%C3%AAn_c%C3%A2y_cover.jpg/220px-Ng%E1%BB%93i_kh%C3%B3c_tr%C3%AAn_c%C3%A2y_cover.jpg",
     NAME_IMAGE: "ngoikhoctrencay",
@@ -679,7 +679,7 @@ const data = [
     TITLE: "Mắt biếc",
     AUTHOR: "Nguyễn Nhật Ánh",
     PRICE: 110,
-    CATEGORY: "Văn Học",
+    CATEGORY: "Văn học",
     LINK_IMAGE: "https://upload.wikimedia.org/wikipedia/vi/9/92/Mat_Biec.gif",
     NAME_IMAGE: "matbiec",
   },
@@ -1549,6 +1549,13 @@ data.forEach((book) => {
   allImageLinks.push(`./assets/thumbnails/${book.NAME_IMAGE}.jpg`);
 });
 console.log(allImageLinks);
+let categorys = [];
+data.forEach((book) => {
+  if (!categorys.includes(book.CATEGORY)) {
+    categorys.push(book.CATEGORY);
+  }
+});
+console.log(categorys);
 // // let html = "";
 // let innerhtml = data
 //   .map((book) => {
