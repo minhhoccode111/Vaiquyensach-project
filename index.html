@@ -35,8 +35,8 @@
   </head>
   <body class="bg-dark">
     <div class="container-fluid">
-      <header id="header" class="header container">
-        <h1 class="hero-title display-1 text-center mx-auto">
+      <header id="header" class="header container-fluid pt-5 mt-5">
+        <h1 class="hero-title display-1 text-center mx-auto mt-5 pt-3 pt-sm-5">
           <a
             href="https://www.instagram.com/vaiquyensach/"
             target="_blank"
@@ -49,54 +49,65 @@
           </a>
         </h1>
         <hr class="text-warning" />
-        <nav id="nav" class="nav row g-0 g-sm-1 g-md-2 g-lg-3 g-xl-4 g-xxl-5">
-          <div class="col-1 display-3">
+        <nav
+          id="nav"
+          class="nav row g-0 g-sm-1 g-md-2 g-lg-3 g-xl-4 g-xxl-4 fixed-top bg-dark ms-4"
+        >
+          <div class="col-1 display-3 center">
             <i class="fa-solid fa-bars text-warning" title="Menu"></i>
           </div>
-          <div class="col-1 center">
+          <!-- <div class="col-1 center">
             <a href="./assest/logos/logo.jpg">
               <img
                 class="logo align-middle rounded-5 img-fluid border border-warning"
                 src="./assest/logos/logo.jpg"
                 alt="Logo page"
+                title="Logo Page"
               />
             </a>
-          </div>
-          <div class="col-9 row">
-            <div class="form-wrapper center">
-              <div class="input-group flex-nowrap">
-                <span
-                  class="input-group-text border border-warning text-secondary"
-                  id="addon-wrapping"
-                  >Search</span
-                >
-                <input
-                  type="text"
-                  class="form-control border border-warning"
-                  placeholder="Tác giả, tác phẩm, thể loại ..."
-                  aria-label="Username"
-                  aria-describedby="addon-wrapping"
-                />
-                <button
-                  class="btn btn-outline-warning text-warning"
-                  type="button"
-                  id="button-addon2"
-                >
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </div>
+          </div> -->
+          <div class="col-9 center row my-1 my-sm-2 my-md-3 my-lg-4 my-xl-5">
+            <div class="input-group center flex-nowrap">
+              <span
+                class="input-group-text border border-warning text-secondary fs-2"
+                id="addon-wrapping"
+                >Search</span
+              >
+              <input
+                type="text"
+                class="form-control border border-warning fs-2"
+                placeholder="Tác giả, tác phẩm, thể loại ..."
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+              <button
+                class="btn btn-outline-warning text-warning fs-2"
+                type="button"
+                id="button-addon2"
+                title="Search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
           </div>
-          <div class="col-1">
+          <div class="col-1 center">
             <span class="text-warning display-4"
               ><i class="fa-solid fa-circle-half-stroke" title="Theme"></i
             ></span>
+          </div>
+          <div class="col-1 center">
+            <a href="#" class="text-warning display-4" title="Back to top"
+              ><i class="fa-regular fa-circle-up"></i
+            ></a>
           </div>
         </nav>
       </header>
       <main id="main" class="main"></main>
       <footer id="footer" class="footer">
-        <!-- <a href="#header" class="back-to-top">Back to top</a> -->
+        <p class="text-warning text-center display-5">
+          Made with <i class="fa-solid fa-heart text-danger"></i> by
+          minhhoccode111
+        </p>
       </footer>
     </div>
   </body>

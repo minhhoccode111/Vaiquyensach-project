@@ -18,13 +18,13 @@ html {
 body {
   min-width: 100vw;
   font-size: 1.8px;
-  /* height: 200vh; */
+  height: 300vh;
 }
 /*some re-use codes*/
 .center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .top-right {
   position: absolute;
@@ -34,6 +34,9 @@ body {
   z-index: 200;
   cursor: pointer;
   font-size: 28px;
+}
+.none {
+  display: none;
 }
 /*some re-use codes*/
 
@@ -45,6 +48,8 @@ a {
 }
 h1 {
   padding: 1rem;
+}
+.nav {
 }
 .nav i {
   cursor: pointer;
