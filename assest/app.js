@@ -1545,82 +1545,82 @@ const data = [
   },
 ];
 
-// let html = "";
-let innerhtml = data
-  .map((book) => {
-    if (book.CATEGORY === "no data") {
-      // console.log(book);
-      // return `<p>${book.TITLE}</p>`;
-      return `
-        <li class="book">
-          <span class="name">${book.TITLE}</span>
-          <span class="name"> ${book.AUTHOR}</span>
-          <br>
-          <span class="name"> ${book.CATEGORY}</span>
-          <span class="book-price">${book.PRICE}</span>
-          <br>
-          
-        </li>
-      `;
-    }
-  }) // FIXME
-  .join("");
-console.log(innerhtml);
-document.querySelector(".innerHtml").innerHTML = innerhtml;
+// // let html = "";
+// let innerhtml = data
+//   .map((book) => {
+//     if (book.CATEGORY === "no data") {
+//       // console.log(book);
+//       // return `<p>${book.TITLE}</p>`;
+//       return `
+//         <li class="book">
+//           <span class="name">${book.TITLE}</span>
+//           <span class="name"> ${book.AUTHOR}</span>
+//           <br>
+//           <span class="name"> ${book.CATEGORY}</span>
+//           <span class="book-price">${book.PRICE}</span>
+//           <br>
 
-function findMatches(wordToMatch, data) {
-  return data.filter((book) => {
-    // here we need to figure out if the city or state matches what was searched
-    const regex = new RegExp(wordToMatch, "gi");
-    return (
-      book.AUTHOR?.match(regex) ||
-      book.TITLE?.match(regex) ||
-      book.CATEGORY?.match(regex)
-    );
-  });
-}
+//         </li>
+//       `;
+//     }
+//   }) // FIXME
+//   .join("");
+// console.log(innerhtml);
+// document.querySelector(".innerHtml").innerHTML = innerhtml;
 
-function numberWithCommas(x) {
-  if (x == undefined) return;
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+// function findMatches(wordToMatch, data) {
+//   return data.filter((book) => {
+//     // here we need to figure out if the city or state matches what was searched
+//     const regex = new RegExp(wordToMatch, "gi");
+//     return (
+//       book.AUTHOR?.match(regex) ||
+//       book.TITLE?.match(regex) ||
+//       book.CATEGORY?.match(regex)
+//     );
+//   });
+// }
 
-function displayMatches(e) {
-  if ((e.key === "Backspace" || e.key === "Delete") && e.target.value == "") {
-    suggestions.innerHTML = "";
-    return;
-  }
-  const matchArray = findMatches(this.value, data);
-  const html = matchArray
-    .map((book) => {
-      const regex = new RegExp(this.value, "gi");
-      const title = book.TITLE?.replace(
-        regex,
-        `<span class="hl">${this.value}</span>`
-      );
-      const author = book.AUTHOR?.replace(
-        regex,
-        `<span class="hl">${this.value}</span>`
-      );
-      const category = book.CATEGORY?.replace(
-        regex,
-        `<span class="hl">${this.value}</span>`
-      );
-      return `
-      <li class="">
-        <span class="name">${title}</span>
-        <span class="name"> ${author}</span>
-        <span class="name"> ${category}</span>
-        <span class="book-price">${numberWithCommas(book.PRICE)}</span>
-      </li>
-    `;
-    })
-    .join("");
-  suggestions.innerHTML = html;
-}
+// function numberWithCommas(x) {
+//   if (x == undefined) return;
+//   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+// }
 
-const searchInput = document.querySelector(".search");
-const suggestions = document.querySelector(".suggestions");
+// function displayMatches(e) {
+//   if ((e.key === "Backspace" || e.key === "Delete") && e.target.value == "") {
+//     suggestions.innerHTML = "";
+//     return;
+//   }
+//   const matchArray = findMatches(this.value, data);
+//   const html = matchArray
+//     .map((book) => {
+//       const regex = new RegExp(this.value, "gi");
+//       const title = book.TITLE?.replace(
+//         regex,
+//         `<span class="hl">${this.value}</span>`
+//       );
+//       const author = book.AUTHOR?.replace(
+//         regex,
+//         `<span class="hl">${this.value}</span>`
+//       );
+//       const category = book.CATEGORY?.replace(
+//         regex,
+//         `<span class="hl">${this.value}</span>`
+//       );
+//       return `
+//       <li class="">
+//         <span class="name">${title}</span>
+//         <span class="name"> ${author}</span>
+//         <span class="name"> ${category}</span>
+//         <span class="book-price">${numberWithCommas(book.PRICE)}</span>
+//       </li>
+//     `;
+//     })
+//     .join("");
+//   suggestions.innerHTML = html;
+// }
 
-searchInput.addEventListener("change", displayMatches);
-searchInput.addEventListener("keyup", displayMatches);
+// const searchInput = document.querySelector(".search");
+// const suggestions = document.querySelector(".suggestions");
+
+// searchInput.addEventListener("change", displayMatches);
+// searchInput.addEventListener("keyup", displayMatches);
