@@ -10,14 +10,14 @@
 *,
 ::before,
 ::after {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 html {
 }
 body {
+  min-width: 100vw;
+  font-size: 1.8px;
 }
 /*some re-use codes*/
 .center {
@@ -35,49 +35,13 @@ body {
   font-size: 28px;
 }
 /*some re-use codes*/
-.page-wrapper {
-}
-.wrapper {
-}
-header.header {
-}
-header.header * {
-}
+
 img {
   width: 100%;
 }
-header .menu-ctn {
+a:hover {
+  text-decoration: underline !important;
 }
-.menu-ctn > img {
-  /* margin-top: 0.8rem; */
-}
-header .logo-ctn {
-}
-.logo-ctn > a {
-}
-.logo-ctn > a > img {
-  border-radius: 50%;
-}
-header .page-name {
-}
-header .header-form {
-  position: relative;
-}
-.header-form form.search-form {
-}
-form.search-form > label {
-}
-form.search-form > input {
-}
-form.search-form > button {
-}
-form.search-form > button > img {
-}
-
-header .back-to-top {
-}
-.back-to-top a {
-}
-.navbar {
-  font-size: 2rem !important;
+a {
+  text-decoration: none !important;
 }
