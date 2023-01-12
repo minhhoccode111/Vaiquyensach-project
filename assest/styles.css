@@ -2,7 +2,7 @@
 
 :root {
   --light-color: rgb(201, 209, 217);
-  --dark-color: rgb(13, 17, 23);
+  --dark-color: #212529;
   font-weight: normal;
   font-size: 10px;
   font-family: "Roboto", sans-serif;
@@ -44,4 +44,9 @@ a:hover {
 }
 a {
   text-decoration: none !important;
+}
+h1 {
+  padding: 1rem;
+}
+hr {
 }
