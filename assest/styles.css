@@ -18,6 +18,7 @@ html {
 body {
   min-width: 100vw;
   font-size: 1.8px;
+  /* height: 200vh; */
 }
 /*some re-use codes*/
 .center {
@@ -36,9 +37,6 @@ body {
 }
 /*some re-use codes*/
 
-img {
-  width: 100%;
-}
 a:hover {
   text-decoration: underline !important;
 }
@@ -48,5 +46,6 @@ a {
 h1 {
   padding: 1rem;
 }
-hr {
+.nav i {
+  cursor: pointer;
 }

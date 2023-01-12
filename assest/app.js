@@ -1544,7 +1544,11 @@ const data = [
     NAME_IMAGE: "powerofforce",
   },
 ];
-
+let allImageLinks = [];
+data.forEach((book) => {
+  allImageLinks.push(`./assets/thumbnails/${book.NAME_IMAGE}.jpg`);
+});
+console.log(allImageLinks);
 // // let html = "";
 // let innerhtml = data
 //   .map((book) => {

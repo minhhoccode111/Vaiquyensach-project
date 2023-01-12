@@ -5,3 +5,6 @@
 //   e.target.previousElementSibling.value = "";
 //   e.target.nextElementSibling.innerHTML = "";
 // }
+const warning = document.querySelectorAll('[class*="warning"]');
+
+console.log(warning);

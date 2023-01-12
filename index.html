@@ -36,21 +36,63 @@
   <body class="bg-dark">
     <div class="container-fluid">
       <header id="header" class="header container">
-        <h1 class="hero-title display-2 text-center text-warning">
-          <span class="">
-            <a
-              href="https://www.instagram.com/vaiquyensach/"
-              target="_blank"
-              rel="noopener"
-              class="text-warning"
-            >
-              <i class="fa-solid fa-book-open"></i>
-              vaiquyensach
-            </a>
-          </span>
+        <h1 class="hero-title display-1 text-center mx-auto">
+          <a
+            href="https://www.instagram.com/vaiquyensach/"
+            target="_blank"
+            rel="noopener"
+            class="text-warning"
+            title="Page"
+          >
+            <i class="fa-solid fa-book-open"></i>
+            vaiquyensach
+          </a>
         </h1>
         <hr class="text-warning" />
-        <nav id="nav" class="nav row"></nav>
+        <nav id="nav" class="nav row g-0 g-sm-1 g-md-2 g-lg-3 g-xl-4 g-xxl-5">
+          <div class="col-1 display-3">
+            <i class="fa-solid fa-bars text-warning" title="Menu"></i>
+          </div>
+          <div class="col-1 center">
+            <a href="./assest/logos/logo.jpg">
+              <img
+                class="logo align-middle rounded-5 img-fluid border border-warning"
+                src="./assest/logos/logo.jpg"
+                alt="Logo page"
+              />
+            </a>
+          </div>
+          <div class="col-9 row">
+            <div class="form-wrapper center">
+              <div class="input-group flex-nowrap">
+                <span
+                  class="input-group-text border border-warning text-secondary"
+                  id="addon-wrapping"
+                  >Search</span
+                >
+                <input
+                  type="text"
+                  class="form-control border border-warning"
+                  placeholder="Tác giả, tác phẩm, thể loại ..."
+                  aria-label="Username"
+                  aria-describedby="addon-wrapping"
+                />
+                <button
+                  class="btn btn-outline-warning text-warning"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <span class="text-warning display-4"
+              ><i class="fa-solid fa-circle-half-stroke" title="Theme"></i
+            ></span>
+          </div>
+        </nav>
       </header>
       <main id="main" class="main"></main>
       <footer id="footer" class="footer">
