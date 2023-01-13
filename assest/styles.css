@@ -29,8 +29,8 @@ body {
 .top-right {
   position: absolute;
   color: red;
-  top: 0rem;
-  right: 0.4rem;
+  top: 0.6rem;
+  right: 1rem;
   z-index: 200;
   cursor: pointer;
   font-size: 28px;
@@ -50,6 +50,15 @@ body {
 .mxw-60 {
   max-width: 60rem;
 }
+.mxw-120 {
+  max-width: 120rem;
+}
+.mnw-26 {
+  min-width: 26rem;
+}
+.mnw-40 {
+  min-width: 40rem;
+}
 /*some re-use codes*/
 
 a:hover {
@@ -65,6 +74,24 @@ h1 {
 }
 .nav i {
   cursor: pointer;
+}
+.aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: #111;
+  width: 0;
+  z-index: 10000;
+  transition: 0.75s;
+  overflow-x: hidden;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 576px) {

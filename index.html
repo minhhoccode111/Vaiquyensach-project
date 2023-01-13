@@ -119,7 +119,41 @@
           </div>
         </nav>
       </header>
-      <aside id="aside" class="aside position-fixed d-none"></aside>
+      <aside id="aside" class="aside">
+        <i
+          class="fa-solid fa-xmark text-danger position-absolute fs-1 top-right close-sidebar"
+        ></i>
+        <div class="dropdown">
+          <a
+            class="btn btn-warning dropdown-toggle btn-lg px-5 text-secondary"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Author
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <footer id="footer" class="footer">
+          <p class="text-warning text-center display-6 fs-2">
+            Made with <i class="fa-solid fa-heart text-danger"></i> by
+            <a
+              class="text-warning text-decoration-underline"
+              href="https://github.com/minhhoccode111"
+              target="_blank"
+              rel="noopener"
+              >minhhoccode111</a
+            >
+          </p>
+        </footer>
+      </aside>
       <hr class="before-main text-warning d-none d-sm-block" />
       <main id="main" class="main">
         <section class="select-options mxw-40 mx-auto">
@@ -149,16 +183,11 @@
             </select>
           </article>
         </section>
-        <section class="section-display">
+        <section class="section-display w-100 mxw-120 mx-auto">
           <div class="display bg-primary"></div>
         </section>
       </main>
-      <footer id="footer" class="footer fixed-bottom">
-        <p class="text-warning text-center display-6 fs-2">
-          Made with <i class="fa-solid fa-heart text-danger"></i> by
-          minhhoccode111
-        </p>
-      </footer>
     </div>
+    <script></script>
   </body>
 </html>
