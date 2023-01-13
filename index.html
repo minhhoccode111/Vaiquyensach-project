@@ -119,28 +119,12 @@
           </div>
         </nav>
       </header>
-      <aside id="aside" class="aside">
+      <aside id="aside" class="aside w-100 mxw-26">
+        <!-- remember to delete w-100 from aside above FIXME-->
         <i
           class="fa-solid fa-xmark text-danger position-absolute fs-1 top-right close-sidebar"
         ></i>
-        <div class="dropdown">
-          <a
-            class="btn btn-warning dropdown-toggle btn-lg px-5 text-secondary"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Author
-          </a>
 
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
         <footer id="footer" class="footer">
           <p class="text-warning text-center display-6 fs-2">
             Made with <i class="fa-solid fa-heart text-danger"></i> by
@@ -153,6 +137,11 @@
             >
           </p>
         </footer>
+        <div class="d-grid gap-3">
+          <div class="p-2 bg-light border">Grid item 1</div>
+          <div class="p-2 bg-light border">Grid item 2</div>
+          <div class="p-2 bg-light border">Grid item 3</div>
+        </div>
       </aside>
       <hr class="before-main text-warning d-none d-sm-block" />
       <main id="main" class="main">
