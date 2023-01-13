@@ -95,11 +95,14 @@
                 aria-describedby="addon-wrapping"
               />
               <button
-                class="btn btn-outline-warning text-warning fs-2"
+                class="btn btn-outline-warning text-warning fs-2 position-relative"
                 type="button"
                 id="button-addon2"
                 title="Search"
               >
+                <i
+                  class="fa-solid fa-xmark text-danger position-absolute fs-1 x-mark"
+                ></i>
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
@@ -146,7 +149,9 @@
             </select>
           </article>
         </section>
-        <section class="display"></section>
+        <section class="section-display">
+          <div class="display bg-primary"></div>
+        </section>
       </main>
       <footer id="footer" class="footer fixed-bottom">
         <p class="text-warning text-center display-6 fs-2">

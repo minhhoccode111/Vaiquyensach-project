@@ -35,6 +35,12 @@ body {
   cursor: pointer;
   font-size: 28px;
 }
+.x-mark {
+  left: -44%;
+  top: 0;
+  z-index: 100;
+  cursor: pointer;
+}
 .none {
   display: none;
 }
