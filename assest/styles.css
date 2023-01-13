@@ -38,6 +38,12 @@ body {
 .none {
   display: none;
 }
+.mxw-40 {
+  max-width: 40rem;
+}
+.mxw-60 {
+  max-width: 60rem;
+}
 /*some re-use codes*/
 
 a:hover {

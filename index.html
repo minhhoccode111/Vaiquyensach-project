@@ -35,7 +35,7 @@
   </head>
   <body class="bg-dark">
     <div class="wrapper container-fluid">
-      <header id="header" class="header container-fluid">
+      <header id="header" class="header">
         <h1
           class="hero-title display-1 text-center pt-5 mt-3 d-block d-sm-none"
         >
@@ -53,7 +53,7 @@
         <hr class="text-warning d-block d-sm-none" />
         <nav
           id="nav"
-          class="nav container-fluid row g-0 g-sm-1 g-md-2 g-lg-3 g-xl-4 g-xxl-4 fixed-top bg-dark ms-4"
+          class="nav row g-0 g-sm-1 g-md-2 g-lg-3 g-xl-4 g-xxl-4 fixed-top bg-dark ms-4"
         >
           <h1 class="hero-title display-1 text-center d-none d-sm-block">
             <a
@@ -118,20 +118,35 @@
       </header>
       <aside id="aside" class="aside position-fixed d-none"></aside>
       <hr class="before-main text-warning d-none d-sm-block" />
-      <main id="main" class="main container-fluid">
-        <section class="tag-btns">
-          <h4 class="category-btns text-center text-warning">
-            Search with categories
-          </h4>
-          <article class="select-options">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Lọc thể loại:</option>
-              <option value="1">All</option>
-              <option value="2"></option>
-              <option value="3">Three</option>
+      <main id="main" class="main">
+        <section class="select-options mxw-40 mx-auto">
+          <h4 class="category-btns text-center text-warning">Lọc thể loại:</h4>
+          <article class="select-options center">
+            <select
+              class="form-select fs-2 border border-warning bg-dark text-warning"
+              aria-label="Default select example"
+            >
+              <option selected value="1">All</option>
+              <option value="2">Kiến thức tổng hợp</option>
+              <option value="3">Kỹ năng làm việc</option>
+              <option value="4">Kỹ năng sống</option>
+              <option value="5">Lịch sử</option>
+              <option value="6">Marketing - Bán hàng</option>
+              <option value="7">Nuôi dạy con</option>
+              <option value="8">Phát triển bản thân</option>
+              <option value="9">Sức khỏe</option>
+              <option value="10">Thiếu nhi</option>
+              <option value="11">Thường thức</option>
+              <option value="12">Tiểu thuyết</option>
+              <option value="13">Trinh thám</option>
+              <option value="14">Triết học</option>
+              <option value="15">Truyện</option>
+              <option value="16">Tâm lý</option>
+              <option value="17">Văn học</option>
             </select>
           </article>
         </section>
+        <section class="display"></section>
       </main>
       <footer id="footer" class="footer fixed-bottom">
         <p class="text-warning text-center display-6 fs-2">

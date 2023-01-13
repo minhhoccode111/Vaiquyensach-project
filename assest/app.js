@@ -1555,7 +1555,7 @@ data.forEach((book) => {
     categorys.push(book.CATEGORY);
   }
 });
-console.log(categorys);
+console.log(categorys.sort());
 // // let html = "";
 // let innerhtml = data
 //   .map((book) => {
