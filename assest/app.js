@@ -1573,13 +1573,7 @@ data.forEach((book) => {
 //if categories don't have book.CATEGORY yet then we push into it
 //do it just to get all categories from data
 categories = categories.sort();
-//sort categories by book's category
-options.forEach((option) => {
-  option.addEventListener("click", function (e) {
-    console.log(e.target.innerHTML);
-    console.log(this.value);
-  });
-});
+
 //handle option buttons click
 function clearDisplay() {
   display.innerHTML = "";
@@ -1721,22 +1715,17 @@ class Book {
   appendHTML() {
     display.appendChild(this.#createHTML());
   }
+
+  hideBook() {
+    this.#createHTML().classList.add("d-none");
+  }
+
+  showBook() {
+    this.#createHTML().classList.remove("d-none");
+  }
 }
 
-// const book1 = new Book(
-//   data[1].TITLE,
-//   data[1].AUTHOR,
-//   data[1].PRICE,
-//   data[1].CATEGORY,
-//   "https://github.com/minhhoccode111/privateImagesContainer/blob/main/aichelungchoban.jpg?raw=true",
-//   data[1].LINK_IMAGE
-// );
-
-data.forEach(function (book) {
-  for (let property in book) {
-    if (property === null || property === undefined || property === "_") return;
-  }
-  //check if that book is missing any information
+data.map(function (book) {
   const createABook = new Book(
     book.TITLE,
     book.AUTHOR,
@@ -1748,3 +1737,28 @@ data.forEach(function (book) {
   createABook.appendHTML();
   // creat books and append to displayDiv
 });
+
+//sort categories by book's category
+options.forEach((option) => {
+  option.addEventListener("click", function (e) {
+    console.log(this.value);
+    console.log(this.textContent);
+    display.innerHTML = "";
+    createBooksMatchCategory(this.textContent);
+  });
+});
+function createBooksMatchCategory(category) {
+  data.forEach(function (book) {
+    if (category === book.CATEGORY) {
+      const createABook = new Book(
+        book.TITLE,
+        book.AUTHOR,
+        book.PRICE,
+        book.CATEGORY,
+        book.IMAGE_FILE_LINK,
+        book.LINK_IMAGE
+      );
+      createABook.appendHTML();
+    }
+  });
+}
