@@ -91,6 +91,27 @@ h1 {
   overflow-x: hidden;
   padding-top: 6rem;
 }
+.active,
+.collapsible:hover,
+.btn-home:hover {
+  opacity: 0.6 !important;
+}
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 8px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.content {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
 .footer {
   position: absolute;
   bottom: 0;
