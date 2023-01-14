@@ -1693,6 +1693,17 @@ class Book {
     // pPrice.textContent = `${this.#price}`;
     pPrice.textContent = `Giá: ${this.getPrice()}`;
 
+    const pCategory = document.createElement("p");
+    pCategory.classList.add(
+      "card-text",
+      "fs-5",
+      "fst-italic",
+      "text-end",
+      "text-break"
+    );
+    // pCategory.textContent=`Phân loại: ${this.#category}`;
+    pCategory.textContent = `Phân loại: ${this.getCategory()}`;
+
     //now we append all together
     aHref.appendChild(imgSrc);
 
@@ -1701,6 +1712,7 @@ class Book {
     divCardBody.appendChild(h5);
     divCardBody.appendChild(pAuthor);
     divCardBody.appendChild(pPrice);
+    divCardBody.appendChild(pCategory);
 
     divCol8.appendChild(divCardBody);
 
@@ -1715,41 +1727,33 @@ class Book {
   appendHTML() {
     display.appendChild(this.#createHTML());
   }
-
-  hideBook() {
-    this.#createHTML().classList.add("d-none");
-  }
-
-  showBook() {
-    this.#createHTML().classList.remove("d-none");
-  }
 }
 
-data.map(function (book) {
-  const createABook = new Book(
-    book.TITLE,
-    book.AUTHOR,
-    book.PRICE,
-    book.CATEGORY,
-    book.IMAGE_FILE_LINK,
-    book.LINK_IMAGE
-  );
-  createABook.appendHTML();
-  // creat books and append to displayDiv
-});
+window.onload = function () {
+  data.forEach(function (book) {
+    const createABook = new Book(
+      book.TITLE,
+      book.AUTHOR,
+      book.PRICE,
+      book.CATEGORY,
+      book.IMAGE_FILE_LINK,
+      book.LINK_IMAGE
+    );
+    createABook.appendHTML();
+    // creat books and append to displayDiv when page loaded
+  });
+};
 
 //sort categories by book's category
 options.forEach((option) => {
   option.addEventListener("click", function (e) {
-    console.log(this.value);
-    console.log(this.textContent);
-    display.innerHTML = "";
+    clearDisplay();
     createBooksMatchCategory(this.textContent);
   });
 });
 function createBooksMatchCategory(category) {
   data.forEach(function (book) {
-    if (category === book.CATEGORY) {
+    if (category === book.CATEGORY || category === "All") {
       const createABook = new Book(
         book.TITLE,
         book.AUTHOR,
