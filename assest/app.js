@@ -1544,6 +1544,13 @@ let data = [
     NAME_IMAGE: "powerofforce",
   },
 ];
+let allImageLinks = [];
+let categories = [];
+const options = document.querySelectorAll(
+  'select[aria-label="Default select example"]>*'
+);
+const display = document.querySelector(".display");
+
 data = data.sort(function (bookA, bookB) {
   if (bookA.NAME_IMAGE > bookB.NAME_IMAGE) {
     return 1;
@@ -1551,16 +1558,193 @@ data = data.sort(function (bookA, bookB) {
     return -1;
   }
 });
-console.log(data);
-let allImageLinks = [];
+//sort data by image's name
 data.forEach((book) => {
+  // book.IMAGE_FILE_LINK = `./assets/thumbnails/${book.NAME_IMAGE}.jpg`;
+  book.IMAGE_FILE_LINK = `https://github.com/minhhoccode111/privateImagesContainer/blob/main/${book.NAME_IMAGE}.jpg?raw=true`;
   allImageLinks.push(`./assets/thumbnails/${book.NAME_IMAGE}.jpg`);
 });
-console.log(allImageLinks);
-let categorys = [];
+//create a list of all links to every image
 data.forEach((book) => {
-  if (!categorys.includes(book.CATEGORY)) {
-    categorys.push(book.CATEGORY);
+  if (!categories.includes(book.CATEGORY)) {
+    categories.push(book.CATEGORY);
   }
 });
-categorys = categorys.sort();
+//if categories don't have book.CATEGORY yet then we push into it
+//do it just to get all categories from data
+categories = categories.sort();
+//sort categories by book's category
+options.forEach((option) => {
+  option.addEventListener("click", function (e) {
+    console.log(e.target.innerHTML);
+    console.log(this.value);
+  });
+});
+//handle option buttons click
+function clearDisplay() {
+  display.innerHTML = "";
+}
+//clear display function
+
+class Book {
+  #title;
+  #author;
+  #price;
+  #category;
+  #imgFileLink;
+  #imgWebLink;
+
+  constructor(title, author, price, category, imgFileLink, imgWebLink) {
+    this.#title = title;
+    this.#author = author;
+    this.#price = price;
+    this.#category = category;
+    this.#imgFileLink = imgFileLink;
+    this.#imgWebLink = imgWebLink;
+  }
+
+  getTitle() {
+    return this.#title;
+  }
+
+  getAuthor() {
+    return this.#author;
+  }
+
+  getPrice() {
+    return this.#price;
+  }
+
+  getCategory() {
+    return this.#category;
+  }
+
+  getImgFileLink() {
+    return this.#imgFileLink;
+  }
+
+  getImgWebLink() {
+    return this.#imgWebLink;
+  }
+
+  setTitle(newTitle) {
+    return (this.#title = newTitle);
+  }
+
+  setAuthor(newAuthor) {
+    return (this.#author = newAuthor);
+  }
+
+  setPrice(newPrice) {
+    return (this.#price = newPrice);
+  }
+
+  setCategory(newCategory) {
+    return (this.#category = newCategory);
+  }
+
+  setImgFileLink(newImgFileLink) {
+    return (this.#imgFileLink = newImgFileLink);
+  }
+
+  setImgWebLink(newImgWebLink) {
+    return (this.#imgWebLink = newImgWebLink);
+  }
+
+  #createHTML() {
+    const divCard = document.createElement("div");
+    divCard.classList.add("card", "m-3", "border", "border-warning");
+
+    const divRow = document.createElement("div");
+    divRow.classList.add("row", "g-0");
+
+    const divCol4 = document.createElement("div");
+    divCol4.classList.add("col-4");
+
+    const aHref = document.createElement("a");
+    // aHref.setAttribute("href", `${this.#imgWebLink}`);
+    aHref.setAttribute("href", `${this.getImgWebLink()}`);
+
+    const imgSrc = document.createElement("img");
+    imgSrc.classList.add("img-fluid", "rounded-start");
+    imgSrc.setAttribute("loading", "lazy");
+    // imgSrc.setAttribute("alt", `${this.#title}`);
+    imgSrc.setAttribute("alt", `${this.getTitle()}`);
+    // imgSrc.setAttribute("src", `${this.#imgFileLink}`);
+    imgSrc.src = `${this.getImgFileLink()}`;
+
+    const divCol8 = document.createElement("div");
+    divCol8.classList.add(
+      "col-8",
+      "border-start",
+      "border-warning",
+      "bg-secondary"
+    );
+
+    const divCardBody = document.createElement("div");
+    divCardBody.classList.add("card-body", "text-warning");
+
+    const h5 = document.createElement("h5");
+    h5.classList.add("card-title", "fs-2", "text-break");
+    // h5.textContent = `${this.#title}`;
+    h5.textContent = `${this.getTitle()}`;
+
+    const pAuthor = document.createElement("p");
+    pAuthor.classList.add("card-text", "fs-3", "text-end", "text-break");
+    // pAuthor.textContent = `${this.#author}`;
+    pAuthor.textContent = `Tác giả: ${this.getAuthor()}`;
+
+    const pPrice = document.createElement("p");
+    pPrice.classList.add("card-text", "fs-4", "text-end", "text-break");
+    // pPrice.textContent = `${this.#price}`;
+    pPrice.textContent = `Giá: ${this.getPrice()}`;
+
+    //now we append all together
+    aHref.appendChild(imgSrc);
+
+    divCol4.appendChild(aHref);
+
+    divCardBody.appendChild(h5);
+    divCardBody.appendChild(pAuthor);
+    divCardBody.appendChild(pPrice);
+
+    divCol8.appendChild(divCardBody);
+
+    divRow.appendChild(divCol4);
+    divRow.appendChild(divCol8);
+
+    divCard.appendChild(divRow);
+
+    return divCard;
+  }
+
+  appendHTML() {
+    display.appendChild(this.#createHTML());
+  }
+}
+
+// const book1 = new Book(
+//   data[1].TITLE,
+//   data[1].AUTHOR,
+//   data[1].PRICE,
+//   data[1].CATEGORY,
+//   "https://github.com/minhhoccode111/privateImagesContainer/blob/main/aichelungchoban.jpg?raw=true",
+//   data[1].LINK_IMAGE
+// );
+
+data.forEach(function (book) {
+  for (let property in book) {
+    if (property === null || property === undefined || property === "_") return;
+  }
+  //check if that book is missing any information
+  const createABook = new Book(
+    book.TITLE,
+    book.AUTHOR,
+    book.PRICE,
+    book.CATEGORY,
+    book.IMAGE_FILE_LINK,
+    book.LINK_IMAGE
+  );
+  createABook.appendHTML();
+  // creat books and append to displayDiv
+});

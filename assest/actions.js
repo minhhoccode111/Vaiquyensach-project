@@ -19,7 +19,6 @@ const btnOutlineWarning = document.querySelectorAll(".btn-outline-warning");
 const warning = [...textWarning, ...borderWarning, ...btnOutlineWarning];
 //section to change website theme when button theme is clicked
 let coll = document.querySelectorAll(".collapsible");
-console.log(coll);
 coll.forEach((button) => {
   button.addEventListener("click", function () {
     this.classList.toggle("active");
