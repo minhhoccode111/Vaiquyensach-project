@@ -1,6 +1,6 @@
 "use strict";
 
-const data = [
+let data = [
   {
     TITLE: "Tâm lý học tính cách",
     AUTHOR: "Trâu Hoàng Minh",
@@ -1544,6 +1544,14 @@ const data = [
     NAME_IMAGE: "powerofforce",
   },
 ];
+data = data.sort(function (bookA, bookB) {
+  if (bookA.NAME_IMAGE > bookB.NAME_IMAGE) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+console.log(data);
 let allImageLinks = [];
 data.forEach((book) => {
   allImageLinks.push(`./assets/thumbnails/${book.NAME_IMAGE}.jpg`);
@@ -1555,4 +1563,4 @@ data.forEach((book) => {
     categorys.push(book.CATEGORY);
   }
 });
-console.log(categorys.sort());
+categorys = categorys.sort();

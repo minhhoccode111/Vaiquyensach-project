@@ -119,6 +119,14 @@ h1 {
   transform: translateX(-50%);
   z-index: 9000;
 }
+.display {
+  width: 90%;
+  height: 30rem;
+  overflow: scroll;
+}
+.display-inner {
+  height: 200vh;
+}
 
 @media (min-width: 576px) {
   .before-main {
