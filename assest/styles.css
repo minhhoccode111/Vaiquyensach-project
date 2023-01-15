@@ -48,6 +48,9 @@ body {
 .none {
   display: none;
 }
+.w-12 {
+  width: 12.5% !important;
+}
 .mxw-26 {
   max-width: 26rem;
 }
