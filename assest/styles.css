@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-  --light-color: rgb(201, 209, 217);
-  --dark-color: #212529;
+  --blue: #3b3b4f;
+  --bluer: #1b1b32;
+  --bluest: #0a0a23;
+  --light: #f5f6f7;
+  --lighter: #aaaaaa;
+  --lightest: #999999;
   font-weight: normal;
   font-size: 10px;
   font-family: "Roboto", sans-serif;
@@ -63,6 +67,47 @@ body {
   min-width: 40rem;
 }
 /*some re-use codes*/
+
+/* some custom bootstrap classes */
+select.bg-dark,
+input.bg-dark,
+.aside button.bg-dark {
+  background-color: var(--blue) !important;
+}
+body.bg-dark,
+span.bg-dark.input-group-text {
+  background-color: var(--bluer) !important;
+}
+.nav.bg-dark,
+header button.btn-outline-light.bg-dark,
+.aside.bg-dark {
+  background-color: var(--bluest) !important;
+}
+span.bg-dark.input-group-text {
+  color: var(--light) !important;
+}
+div.bg-secondary {
+  background-color: var(--blue) !important;
+}
+/* some custom bootstrap classes */
+
+/* change placeholder color */
+input.form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--lightest) !important;
+  opacity: 1; /* Firefox */
+}
+
+input.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--lightest) !important;
+}
+
+input.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--lightest) !important;
+}
+/* change placeholder color */
 
 a:hover {
   text-decoration: underline !important;

@@ -1651,7 +1651,7 @@ class Book {
 
   #createHTML() {
     const divCard = document.createElement("div");
-    divCard.classList.add("card", "m-3", "border", "border-warning");
+    divCard.classList.add("card", "m-3", "border", "border-light");
 
     const divRow = document.createElement("div");
     divRow.classList.add("row", "g-0");
@@ -1675,12 +1675,12 @@ class Book {
     divCol8.classList.add(
       "col-8",
       "border-start",
-      "border-warning",
+      "border-light",
       "bg-secondary"
     );
 
     const divCardBody = document.createElement("div");
-    divCardBody.classList.add("card-body", "text-warning");
+    divCardBody.classList.add("card-body", "text-light");
 
     const h5 = document.createElement("h5");
     h5.classList.add("card-title", "fs-2", "text-break");
