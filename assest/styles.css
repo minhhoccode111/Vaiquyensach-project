@@ -178,23 +178,23 @@ h1 {
 
 @media (min-width: 576px) {
   .before-main {
-    margin-top: 15.2rem;
+    margin-top: 19.2rem;
   }
 }
 
 @media (min-width: 768px) {
   .before-main {
-    margin-top: 16rem;
+    margin-top: 24rem;
   }
 }
 @media (min-width: 992px) {
   .before-main {
-    margin-top: 18.8rem;
+    margin-top: 27.2rem;
   }
 }
 @media (min-width: 1200px) {
   .before-main {
-    margin-top: 19.2rem;
+    margin-top: 31.2rem;
   }
 }
 @media (min-width: 1400px) {
