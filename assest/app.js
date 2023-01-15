@@ -1554,6 +1554,8 @@ const searchInput = document.querySelector(
   '.form-control[aria-label="Username"]'
 );
 const searchButton = document.querySelector("#button-addon2");
+const sortButton = document.querySelector(".button-sort");
+const select = document.querySelector("select.form-select");
 
 data = data.sort(function (bookA, bookB) {
   if (bookA.NAME_IMAGE > bookB.NAME_IMAGE) {
@@ -1748,13 +1750,6 @@ window.onload = function () {
   });
 };
 
-//sort categories by book's category
-options.forEach((option) => {
-  option.addEventListener("click", function (e) {
-    clearDisplay();
-    createBooksMatchCategory(this.textContent);
-  });
-});
 function createBooksMatchCategory(category) {
   data.forEach(function (book) {
     if (category === book.CATEGORY || category === "All") {
@@ -1781,6 +1776,7 @@ searchInput.addEventListener("keypress", function (e) {
     searchButton.click();
   }
 });
+//listen enter keypress
 
 function searching(input) {
   let userInput = removeVietnameseTones(input).toLowerCase();
@@ -1845,3 +1841,7 @@ function removeVietnameseTones(str) {
   return str;
 }
 //convert vietnamese search input string
+sortButton.addEventListener("click", function (e) {
+  clearDisplay();
+  createBooksMatchCategory(select.value);
+});

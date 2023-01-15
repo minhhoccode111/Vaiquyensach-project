@@ -51,6 +51,9 @@ body {
 .w-12 {
   width: 12.5% !important;
 }
+.w-60 {
+  width: 60% !important;
+}
 .mxw-26 {
   max-width: 26rem;
 }
@@ -83,7 +86,8 @@ span.bg-dark.input-group-text {
 }
 .nav.bg-dark,
 header button.btn-outline-light.bg-dark,
-.aside.bg-dark {
+.aside.bg-dark,
+button.button-sort.bg-dark {
   background-color: var(--bluest) !important;
 }
 span.bg-dark.input-group-text {
@@ -91,6 +95,10 @@ span.bg-dark.input-group-text {
 }
 div.bg-secondary {
   background-color: var(--blue) !important;
+}
+select.form-select {
+  width: unset !important;
+  cursor: pointer;
 }
 /* some custom bootstrap classes */
 
