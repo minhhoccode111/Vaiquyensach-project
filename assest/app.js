@@ -1544,8 +1544,7 @@ let data = [
     NAME_IMAGE: "powerofforce",
   },
 ];
-let allImageLinks = [];
-let categories = [];
+let books = [];
 const options = document.querySelectorAll(
   'select[aria-label="Default select example"]>*'
 );
@@ -1556,35 +1555,6 @@ const searchInput = document.querySelector(
 const searchButton = document.querySelector("#button-addon2");
 const sortButton = document.querySelector(".button-sort");
 const select = document.querySelector("select.form-select");
-
-data = data.sort(function (bookA, bookB) {
-  if (bookA.NAME_IMAGE > bookB.NAME_IMAGE) {
-    return 1;
-  } else {
-    return -1;
-  }
-});
-//sort data by image's name
-data.forEach((book) => {
-  // book.IMAGE_FILE_LINK = `./assets/thumbnails/${book.NAME_IMAGE}.jpg`;
-  book.IMAGE_FILE_LINK = `https://github.com/minhhoccode111/privateImagesContainer/blob/main/${book.NAME_IMAGE}.jpg?raw=true`;
-  allImageLinks.push(`./assets/thumbnails/${book.NAME_IMAGE}.jpg`);
-});
-//create a list of all links to every image
-data.forEach((book) => {
-  if (!categories.includes(book.CATEGORY)) {
-    categories.push(book.CATEGORY);
-  }
-});
-//if categories don't have book.CATEGORY yet then we push into it
-//do it just to get all categories from data
-categories = categories.sort();
-
-//handle option buttons click
-function clearDisplay() {
-  display.innerHTML = "";
-}
-//clear display function
 
 class Book {
   #title;
@@ -1736,32 +1706,41 @@ class Book {
 }
 
 window.onload = function () {
-  data.forEach(function (book) {
-    const createABook = new Book(
-      book.TITLE,
-      book.AUTHOR,
-      book.PRICE,
-      book.CATEGORY,
-      book.IMAGE_FILE_LINK,
-      book.LINK_IMAGE
-    );
-    createABook.appendHTML();
-    // creat books and append to displayDiv when page loaded
+  books.forEach(function (book) {
+    book.appendHTML();
   });
+  // creat books and append to displayDiv when page loaded
 };
+data = data.sort(function (bookA, bookB) {
+  if (bookA.NAME_IMAGE > bookB.NAME_IMAGE) {
+    return 1;
+  } else {
+    return -1;
+  }
+});
+//sort data by image's name
+data.forEach((book) => {
+  // book.IMAGE_FILE_LINK = `./assets/thumbnails/${book.NAME_IMAGE}.jpg`;
+  book.IMAGE_FILE_LINK = `https://github.com/minhhoccode111/privateImagesContainer/blob/main/${book.NAME_IMAGE}.jpg?raw=true`;
+  const createABook = new Book(
+    book.TITLE,
+    book.AUTHOR,
+    book.PRICE,
+    book.CATEGORY,
+    book.IMAGE_FILE_LINK,
+    book.LINK_IMAGE
+  );
+  books.push(createABook);
+});
+function clearDisplay() {
+  display.innerHTML = "";
+}
+//clear display function
 
 function createBooksMatchCategory(category) {
-  data.forEach(function (book) {
-    if (category === book.CATEGORY || category === "All") {
-      const createABook = new Book(
-        book.TITLE,
-        book.AUTHOR,
-        book.PRICE,
-        book.CATEGORY,
-        book.IMAGE_FILE_LINK,
-        book.LINK_IMAGE
-      );
-      createABook.appendHTML();
+  books.forEach(function (book) {
+    if (category === book.getCategory() || category === "All") {
+      book.appendHTML();
     }
   });
 }
@@ -1780,13 +1759,14 @@ searchInput.addEventListener("keypress", function (e) {
 
 function searching(input) {
   let userInput = removeVietnameseTones(input).toLowerCase();
-  let dataMatched = data.filter(function (book) {
-    let bookSearchTitle = removeVietnameseTones(book.TITLE?.toLowerCase());
-    let bookSearchAuthor = removeVietnameseTones(book.AUTHOR?.toLowerCase());
-    let bookSearchCategory = removeVietnameseTones(
-      book.CATEGORY?.toLowerCase()
+  let dataMatched = books.filter(function (book) {
+    let bookSearchTitle = removeVietnameseTones(book.getTitle().toLowerCase());
+    let bookSearchAuthor = removeVietnameseTones(
+      book.getAuthor().toLowerCase()
     );
-    // console.log(bookSearchTitle, bookSearchAuthor, bookSearchCategory);
+    let bookSearchCategory = removeVietnameseTones(
+      book.getCategory().toLowerCase()
+    );
     if (
       bookSearchTitle.indexOf(userInput) > -1 ||
       bookSearchAuthor.indexOf(userInput) > -1 ||
@@ -1796,15 +1776,7 @@ function searching(input) {
     }
   });
   dataMatched.forEach(function (book) {
-    const createABook = new Book(
-      book.TITLE,
-      book.AUTHOR,
-      book.PRICE,
-      book.CATEGORY,
-      book.IMAGE_FILE_LINK,
-      book.LINK_IMAGE
-    );
-    createABook.appendHTML();
+    book.appendHTML();
     // creat books and append to displayDiv when page loaded
   });
 }
@@ -1845,3 +1817,4 @@ sortButton.addEventListener("click", function (e) {
   clearDisplay();
   createBooksMatchCategory(select.value);
 });
+//handle sort button click
