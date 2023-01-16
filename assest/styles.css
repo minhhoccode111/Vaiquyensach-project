@@ -4,8 +4,8 @@
   --blue: #3b3b4f;
   --bluer: #1b1b32;
   --bluest: #0a0a23;
-  --light: #f5f6f7;
-  --lighter: #aaaaaa;
+  --light: #f8f9fa;
+  --lighter: #f5f6f7;
   --lightest: #999999;
   font-weight: normal;
   font-size: 10px;
@@ -74,7 +74,7 @@ body {
 }
 /*some re-use codes*/
 
-/* some custom bootstrap classes */
+/* change some bootstrap classes default color */
 select.bg-dark,
 input.bg-dark,
 .aside button.bg-dark {
@@ -100,6 +100,37 @@ select.form-select {
   width: unset !important;
   cursor: pointer;
 }
+/* custom bg-dark color for specified element */
+a.text-light,
+hr.text-light,
+div.text-light,
+input.text-light,
+button.text-light,
+span.text-light,
+p.text-light,
+select.text-light {
+  color: var(--light) !important;
+}
+/* custom text-light color for specified element */
+img.border-light,
+span.border-light,
+input.border-light,
+select.border-light,
+div.border-light {
+  border-color: var(--light) !important;
+}
+/* custom border-light color for specified element */
+button.btn-outline-light {
+  outline-color: var(--light) !important;
+  border-color: var(--light) !important;
+}
+/* custom btn-outline-light color for specified element */
+button.btn-light {
+  color: var(--light);
+  border-color: var(--light) !important;
+}
+/* custom btn-light color for specified element */
+
 /* some custom bootstrap classes */
 
 /* change placeholder color */
