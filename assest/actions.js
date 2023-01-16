@@ -2,22 +2,25 @@ const xButton = document.querySelector(".close-sidebar");
 const hamburgerMenu = document.querySelector('i[title="Menu"]');
 const sidebar = document.querySelector(".aside");
 const homeButton = document.querySelector(".btn-home");
+const themeButton = document.querySelector(
+  `div.col-1 span.text-light i.fa-circle-half-stroke[title="Theme"]`
+);
+const root = document.querySelector(":root");
+
 hamburgerMenu.onclick = () => {
   sidebar.style.width = "100%";
   sidebar.style.maxWidth = "300px";
 };
+
 xButton.onclick = () => {
   sidebar.style.width = "0";
 };
+
 homeButton.onclick = () => {
   sidebar.style.width = "0";
 };
 //section to expand hamburger menu when click
-const textWarning = document.querySelectorAll(".text-warning");
-const borderWarning = document.querySelectorAll(".border-warning");
-const btnOutlineWarning = document.querySelectorAll(".btn-outline-warning");
-const warning = [...textWarning, ...borderWarning, ...btnOutlineWarning];
-//section to change website theme when button theme is clicked
+
 let coll = document.querySelectorAll(".collapsible");
 coll.forEach((button) => {
   button.addEventListener("click", function () {
@@ -36,3 +39,18 @@ coll.forEach((button) => {
   });
 });
 //section to expand when buttons in sidebar is clicked
+
+themeButton.addEventListener("click", function (e) {
+  const getR = getComputedStyle(root);
+  //getR stand for get root style
+  if (getR.getPropertyValue("--blue") === "#3b3b4f") {
+    root.style.setProperty("--blue", "red");
+    root.style.setProperty("--bluer", "yellow");
+    root.style.setProperty("--bluest", "green");
+  } else {
+    root.style.setProperty("--blue", "#3b3b4f");
+    root.style.setProperty("--bluer", "#1b1b32");
+    root.style.setProperty("--bluest", "#0a0a23");
+  }
+});
+//section to change website theme between light and dark with button click
