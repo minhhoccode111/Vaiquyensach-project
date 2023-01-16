@@ -143,7 +143,7 @@ let data = [
     NAME_IMAGE: "harvardbonruoisang",
   },
   {
-    TITLE: "Đảo x2",
+    TITLE: "Đảo",
     AUTHOR: "Nguyễn Ngọc Tư",
     PRICE: 55,
     CATEGORY: "Văn học",
@@ -386,7 +386,7 @@ let data = [
     NAME_IMAGE: "toidasinhramotlannua",
   },
   {
-    TITLE: "Nhân tố Enzyme x2",
+    TITLE: "Nhân tố Enzyme",
     AUTHOR: "Hiromi Shinya",
     PRICE: 81,
     CATEGORY: "Sức khỏe",

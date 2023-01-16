@@ -40,6 +40,24 @@ coll.forEach((button) => {
 });
 //section to expand when buttons in sidebar is clicked
 
+// themeButton.addEventListener("click", function (e) {
+//   const getR = getComputedStyle(root);
+//   //getR stand for get root style
+//   if (getR.getPropertyValue("--blue") === "#3b3b4f") {
+//     root.style.setProperty("--blue", "#744e3b");
+//     // root.style.setProperty("--blue", "#744e3b");
+//     root.style.setProperty("--bluer", "#241b1e");
+//     // root.style.setProperty("--bluer", "#c67756");
+//     root.style.setProperty("--bluest", "#c67756");
+//     // root.style.setProperty("--bluest", "#241b1e");
+//     root.style.setProperty("--light", "white");
+//   } else {
+//     root.style.setProperty("--blue", "#3b3b4f");
+//     root.style.setProperty("--bluer", "#1b1b32");
+//     root.style.setProperty("--bluest", "#0a0a23");
+//     root.style.setProperty("--light", "#f8f9fa");
+//   }
+// });
 themeButton.addEventListener("click", function (e) {
   const getR = getComputedStyle(root);
   //getR stand for get root style
@@ -50,7 +68,7 @@ themeButton.addEventListener("click", function (e) {
     // root.style.setProperty("--bluer", "#c67756");
     root.style.setProperty("--bluest", "#c67756");
     // root.style.setProperty("--bluest", "#241b1e");
-    root.style.setProperty("--light", "#241b1e");
+    root.style.setProperty("--light", "white");
   } else {
     root.style.setProperty("--blue", "#3b3b4f");
     root.style.setProperty("--bluer", "#1b1b32");
