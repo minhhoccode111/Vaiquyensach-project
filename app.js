@@ -3,6 +3,14 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
+const mongoDB = 'mongodb+srv://minhhoccode111:VHHWA2Um99hLEiA9@cluster0.4wfrd1t.mongodb.net/local_library?retryWrites=true&w=majority';
+
+main().catch(console.error);
+async function main() {
+  await mongoose.connect(mongoDB);
+}
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
