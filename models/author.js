@@ -29,12 +29,12 @@ AuthorSchema.virtual('url').get(function () {
 });
 
 // virtual for author's day_of_birth and day_of_death formatted
-AuthorSchema.virtual('date_of_birth_formatted').get(function () {
-  return this.date_of_birth ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED) : '';
-});
-
-AuthorSchema.virtual('date_of_death_formatted').get(function () {
-  return this.date_of_death ? DateTime.fromJSDate(this.date_of_death).toLocaleString(DateTime.DATE_MED) : '';
+AuthorSchema.virtual('lifespan').get(function () {
+  return (
+    (this.date_of_birth ? DateTime.fromJSDate(this.date_of_birth).toLocaleString(DateTime.DATE_MED) : '') +
+    ' - ' +
+    (this.date_of_death ? DateTime.fromJSDate(this.date_of_death).toLocaleString(DateTime.DATE_MED) : '')
+  );
 });
 
 // export model
