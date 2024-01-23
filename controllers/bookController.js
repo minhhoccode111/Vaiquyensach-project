@@ -45,8 +45,8 @@ exports.book_detail = asyncHandler(async (req, res, next) => {
   }
 
   res.render('book_detail', {
+    book,
     title: book.title,
-    book: book,
     book_instances: bookInstances,
   });
 });
@@ -105,10 +105,10 @@ exports.book_create_post = [
         }
       }
       res.render('book_form', {
+        book,
         title: 'Create Book',
         authors: allAuthors,
         genres: allGenres,
-        book: book,
         errors: errors.array(),
       });
     } else {
@@ -122,16 +122,16 @@ exports.book_create_post = [
 // display book delete form on GET
 exports.book_delete_get = asyncHandler(async (req, res, next) => {
   // get detail of book and all its instances (in parallel)
-  const [book, allInstancesOfBook] = await Promise.all([Book.findById(req.params.id).populate('author').populate('genre').exec(), BookInstance.find({ book: req.params.id }).populate('book').exec()]);
+  const [book, bookInstances] = await Promise.all([Book.findById(req.params.id).populate('author').populate('genre').exec(), BookInstance.find({ book: req.params.id }).populate('book').exec()]);
 
   if (book === null) {
     // no result mean that book don't exist in database
     res.redirect('/catalog/books');
   } else {
     res.render('book_delete', {
+      book,
       title: 'Delete Book',
-      book: book,
-      book_instances: allInstancesOfBook,
+      book_instances: bookInstances,
     });
   }
 });
@@ -139,14 +139,14 @@ exports.book_delete_get = asyncHandler(async (req, res, next) => {
 // handle book delete on POST
 exports.book_delete_post = asyncHandler(async (req, res, next) => {
   // get detail of book and all its instances (in parallel)
-  const [book, allInstancesOfBook] = await Promise.all([Book.findById(req.params.id).populate('author').populate('genre').exec(), BookInstance.find({ book: req.params.id }).populate('book').exec()]);
+  const [book, bookInstances] = await Promise.all([Book.findById(req.params.id).populate('author').populate('genre').exec(), BookInstance.find({ book: req.params.id }).populate('book').exec()]);
 
-  if (allInstancesOfBook.length > 0) {
+  if (bookInstances.length > 0) {
     // book has instance, render the same way as GET request
     res.render('book_delete', {
+      book,
       title: 'Delete Book',
-      book: book,
-      book_instances: allInstancesOfBook,
+      book_instances: bookInstances,
     });
   } else {
     // book has no instance, delete object and redirect to list of books
@@ -177,10 +177,10 @@ exports.book_update_get = asyncHandler(async (req, res, next) => {
   });
 
   res.render('book_form', {
+    book,
     title: 'Update Book',
     authors: allAuthors,
     genres: allGenres,
-    book: book,
   });
 });
 
@@ -229,10 +229,10 @@ exports.book_update_post = [
         }
       }
       res.render('book_form', {
+        book,
         title: 'Update Book',
         authors: allAuthors,
         genres: allGenres,
-        book: book,
         errors: errors.array(),
       });
       return;

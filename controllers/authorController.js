@@ -25,8 +25,8 @@ exports.author_detail = asyncHandler(async (req, res, next) => {
   }
 
   res.render('author_detail', {
+    author,
     title: 'Author Detail',
-    author: author,
     author_books: allBooksByAuthor,
   });
 });
@@ -59,8 +59,8 @@ exports.author_create_post = [
     if (!errors.isEmpty()) {
       // there are errors. render form again with sanitized values/errors message
       res.render('author_form', {
+        author,
         title: 'Create Author',
-        author: author,
         errors: errors.array(),
       });
       return;
@@ -85,8 +85,8 @@ exports.author_delete_get = asyncHandler(async (req, res, next) => {
     res.redirect('/catalog/authors');
   } else {
     res.render('author_delete', {
+      author,
       title: 'Delete Author',
-      author: author,
       author_books: allBooksByAuthor,
     });
   }
@@ -100,8 +100,8 @@ exports.author_delete_post = asyncHandler(async (req, res, next) => {
   if (allBooksByAuthor.length > 0) {
     // author has books, render in same way as for GET route
     res.render('author_delete', {
+      author,
       title: 'Delete Author',
-      author: author,
       author_books: allBooksByAuthor,
     });
   } else {
