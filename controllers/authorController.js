@@ -83,13 +83,13 @@ exports.author_delete_get = asyncHandler(async (req, res, next) => {
   if (author === null) {
     // no results - means author is not in the database
     res.redirect('/catalog/authors');
+  } else {
+    res.render('author_delete', {
+      title: 'Delete Author',
+      author: author,
+      author_books: allBooksByAuthor,
+    });
   }
-
-  res.render('author_delete', {
-    title: 'Delete Author',
-    author: author,
-    author_books: allBooksByAuthor,
-  });
 });
 
 // handle Author delete on POST
@@ -104,10 +104,8 @@ exports.author_delete_post = asyncHandler(async (req, res, next) => {
       author: author,
       author_books: allBooksByAuthor,
     });
-
-    return;
   } else {
-    // author has no books, delete object and redirect to the list of author
+    // author has no books, delete object and redirect to the list of authors
     await Author.findByIdAndDelete(req.body.authorid);
     res.redirect('/catalog/authors');
   }
