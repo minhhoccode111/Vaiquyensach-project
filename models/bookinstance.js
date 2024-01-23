@@ -26,5 +26,10 @@ BookInstanceSchema.virtual('due_back_formatted').get(function () {
   return DateTime.fromJSDate(this.due_back).toLocaleString(DateTime.DATE_MED);
 });
 
+// virtual to store date that user input in (which yyyy_mm_dd format) instead of ISO format in database
+BookInstanceSchema.virtual('due_back_yyyy_mm_dd').get(function () {
+  return DateTime.fromJSDate(this.due_back).toISODate(); // format 'YYYY-MM-DD'
+});
+
 // export model
 module.exports = mongoose.model('BookInstance', BookInstanceSchema);
