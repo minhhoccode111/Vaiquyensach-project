@@ -4,7 +4,7 @@ const { DateTime } = require('luxon');
 const Schema = mongoose.Schema;
 
 const BookInstanceSchema = new Schema({
-  book: { type: Schema.Types.ObjectId, red: 'Book', require: true }, // reference to the associated book
+  book: { type: Schema.Types.ObjectId, ref: 'Book', require: true }, // reference to the associated book
   imprint: { type: String, required: true },
   status: {
     type: String,

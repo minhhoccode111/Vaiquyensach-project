@@ -1,7 +1,7 @@
-const BookInstance = require('../models/bookinstance');
 const { body, validationResult } = require('express-validator');
-const Book = require('../models/book');
 const asyncHandler = require('express-async-handler');
+const BookInstance = require('../models/bookinstance');
+const Book = require('../models/book');
 
 // display list of all BookInstance
 exports.bookinstance_list = asyncHandler(async (req, res, next) => {

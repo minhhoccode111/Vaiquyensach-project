@@ -1,9 +1,9 @@
-const createError = require('http-errors');
-const express = require('express');
-const path = require('path');
 const cookieParser = require('cookie-parser');
-const logger = require('morgan');
+const createError = require('http-errors');
 const mongoose = require('mongoose');
+const express = require('express');
+const logger = require('morgan');
+const path = require('path');
 mongoose.set('strictQuery', false);
 const mongoDB = 'mongodb+srv://minhhoccode111:VHHWA2Um99hLEiA9@cluster0.4wfrd1t.mongodb.net/local_library?retryWrites=true&w=majority';
 
@@ -22,19 +22,19 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev')); // use with 'dev' will log the detail of every request to the console
+app.use(express.json()); // when 'Content-Type' : 'application/json' this middleware will parse the json and put result in the req.body for us to use
+app.use(express.urlencoded({ extended: false })); // when 'Content-Type' : 'application/x-www-form-urlencoded' parse data in body of http request
+app.use(cookieParser()); // this parse cookie from http request and put the result in req.cookie for us to use
+app.use(express.static(path.join(__dirname, 'public'))); //  server every files in 'public' folder, which will help access css files after html files response to the client
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', indexRouter); // in this project, route '/' will redirect to '/catalog' anyway
+app.use('/users', usersRouter); // not used in this project
 app.use('/catalog', catalogRouter); // add catalog routes to middleware chain
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  next(createError(404));
+  next(createError(404)); // will create a http error and pass down to next middleware
 });
 
 // error handler
