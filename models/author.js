@@ -39,26 +39,12 @@ AuthorSchema.virtual('lifespan').get(function () {
 
 // virtual for author's day_of_birth format yyyy-mm-dd to fill in update form
 AuthorSchema.virtual('date_of_birth_yyyy_mm_dd').get(function () {
-  if (this.date_of_birth) {
-    const d = new Date(this.date_of_birth);
-    const year = d.getFullYear();
-    const month = (d.getMonth() + 1).toString().padStart(2, '0');
-    const date = d.getDate().toString().padStart(2, '0');
-    console.log(`${year}-${month}-${date}`);
-    return `${year}-${month}-${date}`;
-  }
+  return DateTime.fromJSDate(this.date_of_birth).toISODate();
 });
 
 // virtual for author's day_of_death format yyyy-mm-dd to fill in update form
 AuthorSchema.virtual('date_of_death_yyyy_mm_dd').get(function () {
-  if (this.date_of_death) {
-    const d = new Date(this.date_of_death);
-    const year = d.getFullYear();
-    const month = (d.getMonth() + 1).toString().padStart(2, '0');
-    const date = d.getDate().toString().padStart(2, '0');
-    console.log(`${year}-${month}-${date}`);
-    return `${year}-${month}-${date}`;
-  }
+  return DateTime.fromJSDate(this.date_of_death).toISODate();
 });
 
 // export model

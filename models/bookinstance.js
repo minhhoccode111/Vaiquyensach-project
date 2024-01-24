@@ -23,7 +23,7 @@ BookInstanceSchema.virtual('url').get(function () {
 
 // virtual for bookinstance's due_back_formatted
 BookInstanceSchema.virtual('due_back_formatted').get(function () {
-  return DateTime.fromJSDate(this.due_back).toLocaleString(DateTime.DATE_MED);
+  return this.due_back ? DateTime.fromJSDate(this.due_back).toLocaleString(DateTime.DATE_MED) : 'Not specified';
 });
 
 // virtual to store date that user input in (which yyyy_mm_dd format) instead of ISO format in database
