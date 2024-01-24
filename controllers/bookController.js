@@ -67,6 +67,7 @@ exports.book_create_get = asyncHandler(async (req, res, next) => {
 exports.book_create_post = [
   // convert the genre to an array
   (req, res, next) => {
+    // in case only 1 check box genre is checked, then req.body.genre is a string and not an array of strings, or req.body.genre is undefined
     if (!Array.isArray(req.body.genre)) {
       req.body.genre = typeof req.body.genre === 'undefined' ? [] : [req.body.genre];
     }
@@ -77,6 +78,8 @@ exports.book_create_post = [
   body('author', 'Author must not be empty').trim().isLength({ min: 1 }).escape(),
   body('isbn', 'ISBN must not be empty').trim().isLength({ min: 1 }).escape(),
   body('genre.*').escape(),
+  body('summary', 'Summary must not be empty.').trim().isLength({ min: 1 }).escape(),
+
   // process request after validation and sanitization
 
   asyncHandler(async (req, res, next) => {
@@ -188,6 +191,7 @@ exports.book_update_get = asyncHandler(async (req, res, next) => {
 exports.book_update_post = [
   // convert the genre to an array
   (req, res, next) => {
+    // in case only 1 check box genre is checked, then req.body.genre is a string and not an array of strings, or req.body.genre is undefined
     if (!Array.isArray(req.body.genre)) {
       req.body.genre = typeof req.body.genre === 'undefined' ? [] : [req.body.genre];
     }
@@ -219,7 +223,7 @@ exports.book_update_post = [
     if (!errors.isEmpty()) {
       // there are errors , render form again with sanitized values/error messages
 
-      // get all authors and genres for form
+      // get all authors and genres for forma
       const [allAuthors, allGenres] = await Promise.all([Author.find().sort({ family_name: 1 }).exec(), Genre.find().sort({ name: 1 }).exec()]);
 
       // mark our selected genres as checked
