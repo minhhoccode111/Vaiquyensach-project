@@ -1,15 +1,20 @@
+const debug = require('debug')('mongo-connect');
 const cookieParser = require('cookie-parser');
 const createError = require('http-errors');
 const compression = require('compression');
 const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
 const express = require('express');
 const logger = require('morgan');
 const helmet = require('helmet');
 const path = require('path');
-mongoose.set('strictQuery', false);
-const mongoDB = 'mongodb+srv://minhhoccode111:VHHWA2Um99hLEiA9@cluster0.4wfrd1t.mongodb.net/local_library?retryWrites=true&w=majority';
+require('dotenv').config();
 
-main().catch(console.error);
+const dev_db_url = 'mongodb+srv://minhhoccode111:VHHWA2Um99hLEiA9@cluster0.4wfrd1t.mongodb.net/local_library?retryWrites=true&w=majority';
+
+const mongoDB = process.env.MONGODB_URI || dev_db_url;
+
+main().catch(debug);
 async function main() {
   await mongoose.connect(mongoDB);
 }

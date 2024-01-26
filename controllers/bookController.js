@@ -3,6 +3,7 @@ const Author = require('../models/author');
 const Genre = require('../models/genre');
 const BookInstance = require('../models/bookinstance');
 const { body, validationResult } = require('express-validator');
+const debug = require('debug')('book');
 
 const asyncHandler = require('express-async-handler');
 
@@ -39,6 +40,7 @@ exports.book_detail = asyncHandler(async (req, res, next) => {
   const [book, bookInstances] = await Promise.all([Book.findById(req.params.id).populate('author').populate('genre').exec(), BookInstance.find({ book: req.params.id }).exec()]);
   if (book === null) {
     // no result
+    debug(`id not found in book detail get: ` + req.params.id);
     const err = new Error('Book not found');
     err.status = 404;
     return next(err);
@@ -129,6 +131,7 @@ exports.book_delete_get = asyncHandler(async (req, res, next) => {
 
   if (book === null) {
     // no result mean that book don't exist in database
+    debug(`id not found in book delete get: ` + req.params.id);
     res.redirect('/catalog/books');
   } else {
     res.render('book_delete', {
@@ -169,6 +172,7 @@ exports.book_update_get = asyncHandler(async (req, res, next) => {
 
   if (book === null) {
     // no results
+    debug(`id not found in book update get: ` + req.params.id);
     const err = new Error('Book not found');
     err.status = 404;
     return next(err);

@@ -2,6 +2,7 @@ const Author = require('../models/author');
 const Book = require('../models/book');
 const asyncHandler = require('express-async-handler');
 const { body, validationResult } = require('express-validator');
+const debug = require('debug')('author');
 
 // display list of all Authors
 exports.author_list = asyncHandler(async (req, res, next) => {
@@ -19,6 +20,7 @@ exports.author_detail = asyncHandler(async (req, res, next) => {
 
   if (author === null) {
     // no results
+    debug(`id not found in author detail get: ` + req.params.id);
     const err = new Error('Author not found');
     err.status = 404;
     return next(err);
@@ -82,6 +84,7 @@ exports.author_delete_get = asyncHandler(async (req, res, next) => {
 
   if (author === null) {
     // no results - means author is not in the database
+    debug(`id not found in author delete get: ` + req.params.id);
     res.redirect('/catalog/authors');
   } else {
     res.render('author_delete', {
@@ -116,6 +119,7 @@ exports.author_update_get = asyncHandler(async (req, res, next) => {
   const author = await Author.findById(req.params.id).exec();
 
   if (author === null) {
+    debug(`id not found in author update get: ` + req.params.id);
     const err = new Error('Author not found');
     err.status = 404;
     next(err);

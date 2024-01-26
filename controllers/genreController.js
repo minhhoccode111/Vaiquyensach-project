@@ -2,6 +2,7 @@ const Genre = require('../models/genre');
 const Book = require('../models/book');
 const asyncHandler = require('express-async-handler');
 const { body, validationResult } = require('express-validator');
+const debug = require('debug')('genre');
 
 // display list of all Genre
 exports.genre_list = asyncHandler(async (req, res, next) => {
@@ -16,6 +17,7 @@ exports.genre_detail = asyncHandler(async (req, res, next) => {
 
   if (genre === null) {
     // no results
+    debug(`id not found in genre detail get: ` + req.params.id);
     const err = new Error('Genre not found');
     err.status = 404;
     // pass err object to next middleware
@@ -77,6 +79,7 @@ exports.genre_delete_get = asyncHandler(async (req, res, next) => {
 
   if (genre === null) {
     // if genre don't exist in database, then redirect
+    debug(`id not found in genre delete get: ` + req.params.id);
     res.redirect('/catalog/genres');
   }
 
@@ -110,6 +113,7 @@ exports.genre_update_get = asyncHandler(async (req, res, next) => {
   const genre = await Genre.findById(req.params.id).exec();
 
   if (genre === null) {
+    debug(`id not found in genre update get: ` + req.params.id);
     const err = new Error('Genre not found');
     err.status = 404;
     next(err);

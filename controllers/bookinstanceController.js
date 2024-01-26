@@ -2,6 +2,7 @@ const { body, validationResult } = require('express-validator');
 const asyncHandler = require('express-async-handler');
 const BookInstance = require('../models/bookinstance');
 const Book = require('../models/book');
+const debug = require('debug')('bookinstance');
 
 // display list of all BookInstance
 exports.bookinstance_list = asyncHandler(async (req, res, next) => {
@@ -19,6 +20,7 @@ exports.bookinstance_detail = asyncHandler(async (req, res, next) => {
 
   if (bookInstance === null) {
     // no results
+    debug(`id not found in bookinstance detail get: ` + req.params.id);
     const err = new Error('Book copy not found');
     err.status = 404;
     return next(err);
@@ -89,6 +91,7 @@ exports.bookinstance_delete_get = asyncHandler(async (req, res, next) => {
 
   if (bookinstance === null) {
     // bookinstance not exist in database, redirect to all book instance
+    debug(`id not found in book delete get: ` + req.params.id);
     res.redirect('/catalog/bookinstances');
   } else {
     // render book instance delete form
@@ -111,6 +114,7 @@ exports.bookinstance_update_get = asyncHandler(async (req, res, next) => {
 
   // can't find that bookinstance in database
   if (bookinstance === null) {
+    debug(`id not found in book update get: ` + req.params.id);
     const err = new Error('BookInstance Not Found');
     err.status = 404;
     next(err);
