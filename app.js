@@ -1,8 +1,10 @@
 const cookieParser = require('cookie-parser');
 const createError = require('http-errors');
+const compression = require('compression');
 const mongoose = require('mongoose');
 const express = require('express');
 const logger = require('morgan');
+const helmet = require('helmet');
 const path = require('path');
 mongoose.set('strictQuery', false);
 const mongoDB = 'mongodb+srv://minhhoccode111:VHHWA2Um99hLEiA9@cluster0.4wfrd1t.mongodb.net/local_library?retryWrites=true&w=majority';
@@ -22,6 +24,13 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.disable('x-powered-by'); // reduce fingerprinting
+
+// compress responses for performance
+app.use(compression());
+
+// security HTTP header
+app.use(helmet());
 app.use(logger('dev')); // use with 'dev' will log the detail of every request to the console
 app.use(express.json()); // when 'Content-Type' : 'application/json' this middleware will parse the json and put result in the req.body for us to use
 app.use(express.urlencoded({ extended: false })); // when 'Content-Type' : 'application/x-www-form-urlencoded' parse data in body of http request
