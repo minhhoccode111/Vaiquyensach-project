@@ -1,6 +1,9 @@
 {
   "name": "local-library-mdn-be",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=21.6.1"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -14,6 +17,7 @@
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^7.1.5",
     "express-validator": "^7.0.1",
     "helmet": "^7.1.0",
     "http-errors": "^2.0.0",
